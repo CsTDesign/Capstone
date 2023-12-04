@@ -1,0 +1,15 @@
+.navMenu {
+  background-color:#5ace62;
+  border: 2px;
+}
+
+#wrapper {
+  background-color: white;
+  margin: 0 auto;
+  width: 100%;
+}
+
+footer {
+  background-color: #5ace62;
+  border: 2px;
+}
