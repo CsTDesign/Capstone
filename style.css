@@ -1,15 +1,107 @@
+@media (max-width: 549px) {
+  header {
+    height: 60vh;
+  }
+  
+  .hidden--mobile {
+    display: none !important;
+  }
+
+  .navMenu {
+    align-items: center;
+    background-color: black;
+    color: #5ace62;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navMenu > i {
+    font-size: 2em;
+    padding: 1rem;
+  }
+
+  .navMenu > ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0;
+  }
+
+  .navMenu > ul > li {
+    list-style-type: none;
+    padding: .5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  * {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 550px) {
+  header {
+    height: 60vh;
+  }
+
+  .navMenu > ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 0;
+  }
+
+  .navMenu > ul > li {
+    display: inline-block;
+    padding: .5rem .5rem;
+    text-decoration: none;
+  }
+  
+  .navMenu > .fa-bars {
+    display: none;
+  }
+}
+
 .navMenu {
   background-color:#5ace62;
+  color: white;
   border: 2px;
 }
 
 #wrapper {
-  background-color: white;
   margin: 0 auto;
   width: 100%;
+}
+
+* {
+  background-color: white;
+}
+
+fieldset {
+  border-color: #5ace62;
+  border-radius: 5px;
 }
 
 footer {
   background-color: #5ace62;
   border: 2px;
+}
+
+header {
+  background-image: url(table-2879213.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+h2 {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+legend {
+  background-color: #5ace62;
+  color: white;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }

@@ -1,56 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Recipes & Preferences - iMealPrep</title>
+    <title>Recipes Search - iMealPrep</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/2edeca0841.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700&display=swap" rel="stylesheet">
   </head>
-</html>
-<body>
-  <header>
-    <i class="fa-solid fa-plate-wheat fa-2xl" style="color: #5ace62;"></i>
-    <h1>iMealPrep</h1>
-  </header>
-  <nav class="navMenu">
-    <ul>
-      <li><a href="index.html"><i class="fa-solid fa-house" style="color: #000000;"></i>Home</a></li>
-      <li><a href=""><i class="fa-solid fa-camera" style="color: #000000;"></i>Take Pic</a></li>
-      <li><a href="recipes.html"><i class="fa-solid fa-kitchen-set" style="color: #000000;"></i>Recipes</a></li>
-      <li><a href="about.html"><i class="fa-solid fa-question" style="color: #000000;"></i>About</a></li>
-      <li><a href="contact.html"><i class="fa-solid fa-address-book" style="color: #000000;"></i>Contact</a></li>
-    </ul>
-    <search>
-      <form action="./search/">
-        <label for="search">Search</label>
-        <input type="search" id="query" placeholder="Search">
-      </form>
-    </search>
-  </nav>
-  <main>
+  <body>
     <div id="wrapper">
-
+      <header>
+        <h1><i class="fa-solid fa-plate-wheat fa-2xl" style="color: #5ace62;"></i>iMealPrep</h1>
+        <p>Image by <a href="https://pixabay.com/users/goumbik-3752482/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2879213">Lukas</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2879213">Pixabay</a></p>
+      </header>
+      <nav class="navMenu">
+        <i class="fas fa-bars"></i>
+        <ul class="hidden--mobile nav-links">
+          <li><a href="index.html"><i class="fa-solid fa-house" style="color: #000000;"></i>Home</a></li>
+          <li><a href="recipes.html"><i class="fa-solid fa-kitchen-set" style="color: #000000;"></i>Recipes</a></li>
+          <li><a href="about.html"><i class="fa-solid fa-question" style="color: #000000;"></i>About</a></li>
+          <li><a href="contact.html"><i class="fa-solid fa-address-book" style="color: #000000;"></i>Contact</a></li>
+        </ul>
+      </nav>
+      <main>
+        <h2>RECIPE FINDER</h2>
+        <p>No matter the diet, iMealPrep can help make the search for delicious meal prep recipes easier.</p>
+        <hr>
+        <form id="recipe-form" action="" method="get">
+          <fieldset class="recipe">
+            <legend>Meat</legend>
+            <input type="checkbox" name="chicken" id="chicken">
+            <label for="chicken">Chicken</label>
+            <input type="checkbox" name="egg" id="egg">
+            <label for="egg">Egg</label>
+            <input type="checkbox" name="turkey" id="turkey">
+            <label for="turkey">Turkey</label>
+            <input type="checkbox" name="turkey-bacon" id="turkey-bacon">
+            <label for="turkey-bacon">Turkey Bacon</label>
+            <input type="checkbox" name="pork" id="pork">
+            <label for="pork">Pork</label>
+            <input type="checkbox" name="sausage" id="sausage">
+            <label for="sausage">Sausage</label>
+            <input type="checkbox" name="bratwurst" id="bratwurst">
+            <label for="bratwurst">Bratwurst</label>
+            <input type="checkbox" name="chorizo" id="chorizo">
+            <label for="chorizo">Chorizo</label>
+            <input type="checkbox" name="ham" id="ham">
+            <label for="ham">Ham</label>
+            <input type="checkbox" name="prosciutto" id="prosciutto">
+            <label for="prosciutto">Prosciutto</label>
+            <input type="checkbox" name="bacon" id="bacon">
+            <label for="bacon">Bacon</label>
+            <input type="checkbox" name="beef" id="beef">
+            <label for="beef">Beef</label>
+            <input type="checkbox" name="steak" id="steak">
+            <label for="steak">Steak</label>
+            <input type="checkbox" name="bison" id="bison">
+            <label for="bison">Bison</label>
+            <input type="checkbox" name="lamb" id="lamb">
+            <label for="lamb">Lamb</label>
+            <input type="checkbox" name="veal" id="veal">
+            <label for="veal">Veal</label>
+            <input type="checkbox" name="venison" id="venison">
+            <label for="venison">Venison</label>
+            <input type="checkbox" name="salmon" id="salmon">
+            <label for="salmon">Salmon</label>
+            <input type="checkbox" name="shrimp" id="shrimp">
+            <label for="shrimp">Shrimp</label>
+            <input type="checkbox" name="crab" id="crab">
+            <label for="crab">Crab</label>
+            <input type="checkbox" name="lobster" id="lobster">
+            <label for="lobster">Lobster</label>
+            <input type="checkbox" name="tilapia" id="tilapia">
+            <label for="tilapia">Tilapia</label>
+            <input type="checkbox" name="catfish" id="catfish">
+            <label for="catfish">Catfish</label>
+          </fieldset>
+          <hr>
+          <fieldset class="recipe">
+            <legend>Vegetables</legend>
+            <input type="checkbox" name="carnivore" id="carnivore">
+            <label for="carnivore">Carnivore</label>
+          </fieldset>
+          <fieldset class="recipe">
+            <legend>Dietary Preferences</legend>
+            <input type="checkbox" name="carnivore" id="carnivore">
+            <label for="carnivore">Carnivore</label>
+            <input type="checkbox" name="pescatarian" id="pescatarian">
+            <label for="pescatarian">Pescatarian</label>
+            <input type="checkbox" name="vegetarian" id="vegetarian">
+            <label for="vegetarian">Vegetarian</label>
+            <input type="checkbox" name="vegan" id="vegan">
+            <label for="vegan">Vegan</label>
+            <input type="checkbox" name="keto" id="keto">
+            <label for="paleo">Keto</label>
+            <input type="checkbox" name="low-cal" id="low-cal">
+            <label for="low-cal">Low Calorie</label>
+            <input type="checkbox" name="low-carb" id="low-carb">
+            <label for="low-carb">Low Carb</label>
+            <input type="checkbox" name="low-fat" id="low-fat">
+            <label for="low-fat">Low Fat</label>
+            <input type="checkbox" name="high-protein" id="high-protein">
+            <label for="high-protein">High Protein</label>
+            <input type="checkbox" name="immune-boost" id="immune-boost">
+            <label for="immune-boost">Immune System Booster</label>
+            <input type="checkbox" name="kosher" id="kosher">
+            <label for="kosher">Kosher</label>
+            <input type="checkbox" name="halal" id="halal">
+            <label for="halal">Halal</label>
+          </fieldset>
+          <hr>
+        </form>
+      </main>
+      <footer>
+        <div id="foot-left">
+          <span>Sitemap</span>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div id="foot-center">
+          <span>&copy;2023-2024 CsT Design</span>
+          <p><a href="https://github.com/CsTDesign">GitHub</a></p>
+          <p><a href="https://www.linkedin.com/in/cory-taylor-010b24103/">LinkedIn</a></p>
+        </div>
+        <div id="foot-right">
+          <span>Cory Taylor</span>
+          <a href="tel:314-223-4963">&#40;314&#41; 223-4963</a>
+          <a href="mailto:official.cstdesign@gmail.com" target="_newtab">official.cstdesign@gmail.com</a>
+        </div>
+      </footer>
     </div>
-  </main>
-  <footer>
-    <div id="foot-left">
-      <span>Sitemap</span>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="recipes.html">Recipes</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-    <div id="foot-center">
-      <span>&copy;2023-2024 CsT Design</span>
-
-    </div>
-    <div id="foot-right">
-      <span>Cory Taylor</span>
-      <a href="tel:314-223-4963">&#40;314&#41; 223-4963</a>
-      <a href="mailto:official.cstdesign@gmail.com" target="_newtab">official.cstdesign@gmail.com</a>
-    </div>
-  </footer>
-</body>
+  </body>
+</html>
