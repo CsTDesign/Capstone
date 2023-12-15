@@ -14,7 +14,8 @@
   <body>
     <div id="wrapper">
       <header>
-        <h1><i class="fa-solid fa-plate-wheat fa-2xl" style="color: #5ace62;"></i>iMealPrep</h1>
+        <i class="fa-solid fa-plate-wheat fa-2xl" style="color: #5ace62;"></i>
+        <h1>iMealPrep</h1>
         <p>Image by <a href="https://pixabay.com/users/goumbik-3752482/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2879213">Lukas</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2879213">Pixabay</a></p>
       </header>
       <nav class="navMenu">
@@ -31,6 +32,33 @@
         <p>No matter the diet, iMealPrep can help make the search for delicious meal prep recipes easier.</p>
         <hr>
         <form id="recipe-form" action="" method="get">
+          <fieldset class="recipe">
+            <legend>Dietary Preferences</legend>
+            <input type="checkbox" name="carnivore" id="carnivore">
+            <label for="carnivore">Carnivore</label>
+            <input type="checkbox" name="pescatarian" id="pescatarian">
+            <label for="pescatarian">Pescatarian</label>
+            <input type="checkbox" name="vegetarian" id="vegetarian">
+            <label for="vegetarian">Vegetarian</label>
+            <input type="checkbox" name="vegan" id="vegan">
+            <label for="vegan">Vegan</label>
+            <input type="checkbox" name="keto" id="keto">
+            <label for="paleo">Keto</label>
+            <input type="checkbox" name="low-cal" id="low-cal">
+            <label for="low-cal">Low Calorie</label>
+            <input type="checkbox" name="low-carb" id="low-carb">
+            <label for="low-carb">Low Carb</label>
+            <input type="checkbox" name="low-fat" id="low-fat">
+            <label for="low-fat">Low Fat</label>
+            <input type="checkbox" name="high-protein" id="high-protein">
+            <label for="high-protein">High Protein</label>
+            <input type="checkbox" name="immune-boost" id="immune-boost">
+            <label for="immune-boost">Immune System Booster</label>
+            <input type="checkbox" name="kosher" id="kosher">
+            <label for="kosher">Kosher</label>
+            <input type="checkbox" name="halal" id="halal">
+            <label for="halal">Halal</label>
+          </fieldset>
           <fieldset class="recipe">
             <legend>Meat</legend>
             <input type="checkbox" name="chicken" id="chicken">
@@ -83,35 +111,54 @@
           <hr>
           <fieldset class="recipe">
             <legend>Vegetables</legend>
-            <input type="checkbox" name="carnivore" id="carnivore">
-            <label for="carnivore">Carnivore</label>
-          </fieldset>
-          <fieldset class="recipe">
-            <legend>Dietary Preferences</legend>
-            <input type="checkbox" name="carnivore" id="carnivore">
-            <label for="carnivore">Carnivore</label>
-            <input type="checkbox" name="pescatarian" id="pescatarian">
-            <label for="pescatarian">Pescatarian</label>
-            <input type="checkbox" name="vegetarian" id="vegetarian">
-            <label for="vegetarian">Vegetarian</label>
-            <input type="checkbox" name="vegan" id="vegan">
-            <label for="vegan">Vegan</label>
-            <input type="checkbox" name="keto" id="keto">
-            <label for="paleo">Keto</label>
-            <input type="checkbox" name="low-cal" id="low-cal">
-            <label for="low-cal">Low Calorie</label>
-            <input type="checkbox" name="low-carb" id="low-carb">
-            <label for="low-carb">Low Carb</label>
-            <input type="checkbox" name="low-fat" id="low-fat">
-            <label for="low-fat">Low Fat</label>
-            <input type="checkbox" name="high-protein" id="high-protein">
-            <label for="high-protein">High Protein</label>
-            <input type="checkbox" name="immune-boost" id="immune-boost">
-            <label for="immune-boost">Immune System Booster</label>
-            <input type="checkbox" name="kosher" id="kosher">
-            <label for="kosher">Kosher</label>
-            <input type="checkbox" name="halal" id="halal">
-            <label for="halal">Halal</label>
+            <input type="checkbox" name="pepper" id="pepper">
+            <label for="pepper">Pepper</label>
+            <input type="checkbox" name="lettuce" id="lettuce">
+            <label for="lettuce">Lettuce</label>
+            <input type="checkbox" name="spinach" id="spinach">
+            <label for="spinach">Spinach</label>
+            <input type="checkbox" name="cabbage" id="cabbage">
+            <label for="cabbage">Cabbage</label>
+            <input type="checkbox" name="carrot" id="carrot">
+            <label for="carrot">Carrot</label>
+            <input type="checkbox" name="tomato" id="tomato">
+            <label for="tomato">Tomato</label>
+            <input type="checkbox" name="avocado" id="avocado">
+            <label for="avocado">Avocado</label>
+            <input type="checkbox" name="broccoli" id="broccoli">
+            <label for="broccoli">Broccoli</label>
+            <input type="checkbox" name="cauliflower" id="cauliflower">
+            <label for="cauliflower">Cauliflower</label>
+            <input type="checkbox" name="corn" id="corn">
+            <label for="corn">Corn</label>
+            <input type="checkbox" name="brussels-sprout" id="brussels-sprout">
+            <label for="brussels-sprout">Brussels Sprout</label>
+            <input type="checkbox" name="eggplant" id="eggplant">
+            <label for="eggplant">Eggplant</label>
+            <input type="checkbox" name="squash" id="squash">
+            <label for="squash">Squash</label>
+            <input type="checkbox" name="cucumber" id="cucumber">
+            <label for="cucumber">Cucumber</label>
+            <input type="checkbox" name="Zucchini" id="Zucchini">
+            <label for="Zucchini">Zucchini</label>
+            <input type="checkbox" name="spinach" id="spinach">
+            <label for="tomato">Tomato</label>
+            <input type="checkbox" name="onion" id="onion">
+            <label for="onion">Onion</label>
+            <input type="checkbox" name="shallot" id="shallot">
+            <label for="shallot">Shallot</label>
+            <input type="checkbox" name="beetroot" id="beetroot">
+            <label for="beetroot">Beetroot</label>
+            <input type="checkbox" name="leek" id="leek">
+            <label for="leek">Leek</label>
+            <input type="checkbox" name="peas" id="peas">
+            <label for="peas">Peas</label>
+            <input type="checkbox" name="asparagus" id="asparagus">
+            <label for="asparagus">Asparagus</label>
+            <input type="checkbox" name="green-beans" id="green-beans">
+            <label for="green-beans">Green Beans</label>
+            <input type="checkbox" name="artichoke" id="artichoke">
+            <label for="artichoke">Artichoke</label>
           </fieldset>
           <hr>
         </form>
@@ -137,6 +184,8 @@
           <a href="mailto:official.cstdesign@gmail.com" target="_newtab">official.cstdesign@gmail.com</a>
         </div>
       </footer>
+      <script src="index.js"></script>
+      <script src="https://kit.fontawesome.com/2edeca0841.js" crossorigin="anonymous"></script>
     </div>
   </body>
 </html>

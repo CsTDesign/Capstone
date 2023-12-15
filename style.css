@@ -61,19 +61,62 @@
   }
 }
 
+.fa-plate-wheat {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
 .navMenu {
   background-color:#5ace62;
-  color: white;
   border: 2px;
+  color: white;
+  display: flex;
+  text-decoration: none;
+}
+
+#foot-center {
+  display: flex;
+  margin: 0 auto;
+}
+
+#foot-left {
+  display: flex;
+  float: left;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+#foot-right {
+  display: flex;
+  float: right;
 }
 
 #wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
+  min-height: 100%;
   width: 100%;
 }
 
 * {
-  background-color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: darkgreen;
+}
+
+a:visited {
+  color: darkgreen;
+  font-weight: bolder;
 }
 
 fieldset {
@@ -83,17 +126,42 @@ fieldset {
 
 footer {
   background-color: #5ace62;
-  border: 2px;
+  box-sizing: border-box;
+  bottom: 0;
+  color: white;
+  left: 0;
+  position: absolute;
+  right: 0;
+  width: 100%;
 }
 
 header {
-  background-image: url(table-2879213.jpg);
+  align-items: center;
+  background-image: url(docs/imgs/table-2879213.jpg);
   background-size: cover;
+  display: flex;
   height: 100vh;
+  justify-content: center;
+}
+
+header > p {
+  color: white;
+  display: inline-block;
+  text-align: center;
+}
+
+h1 {
+  color: #5ace62;
+  display: flex;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 72px;
+  justify-content: center;
+  text-align: center;
 }
 
 h2 {
   font-family: "Red Hat Display", sans-serif;
+  text-align: center;
 }
 
 legend {
@@ -104,4 +172,5 @@ legend {
 
 p {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: center;
 }
