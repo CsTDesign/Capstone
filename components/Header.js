@@ -1,5 +1,5 @@
 import html from "html-literal";
-export default () => html`
+export default (state) => html`
   <header>
     <i class="fa-solid fa-plate-wheat fa-2xl" style="color: #5ace62;"></i>
     <h1>${state.Header}</h1>

@@ -1,5 +1,5 @@
 import html from "html-literal";
-export default () => html`
+export default (links) => html`
   <nav class="navMenu">
     <i class="fas fa-bars"></i>
     <ul class="hidden--mobile nav-links">
