@@ -13,6 +13,7 @@
     color: #5ace62;
     display: flex;
     flex-direction: column;
+    font-family: "Red Hat Display", sans-serif;
   }
 
   .navMenu > i {
@@ -68,28 +69,40 @@
 }
 
 .navMenu {
+  align-items: center;
   background-color:#5ace62;
-  border: 2px;
   color: white;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-decoration: none;
 }
 
+.navMenu > ul > li {
+  font-family: "Red Hat Display", sans-serif;
+}
+
 #foot-center {
+  align-items: center;
   display: flex;
   margin: 0 auto;
 }
 
 #foot-left {
+  align-items: center;
   display: flex;
   float: left;
-  list-style-type: none;
+  list-style: none;
   text-decoration: none;
 }
 
 #foot-right {
+  align-items: center;
   display: flex;
   float: right;
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
 }
 
 #wrapper {
@@ -157,11 +170,14 @@ h1 {
   font-size: 72px;
   justify-content: center;
   text-align: center;
+  text-shadow: #555 5px 0 5px;
 }
 
 h2 {
   font-family: "Red Hat Display", sans-serif;
+  font-size: 30px;
   text-align: center;
+  text-shadow: #5ace62 2px 0 2px;
 }
 
 legend {
