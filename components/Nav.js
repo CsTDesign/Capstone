@@ -1,5 +1,5 @@
 import html from "html-literal";
-export default (links) => html`
+export default links => html`
   <nav class="navMenu">
     <i class="fas fa-bars"></i>
     <ul class="hidden--mobile nav-links">
@@ -8,7 +8,7 @@ export default (links) => html`
           link =>
             `<li><a href="/${link.title}" title="${link.title}" data-navigo>${link.text}</a></li>`
         )
-        .join("")};
+        .join("")}
     </ul>
   </nav>
 `;

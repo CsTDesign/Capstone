@@ -1,18 +1,18 @@
 import html from "html-literal";
-export default (state) => html`
-  <header>
+export default state => html`
+  <header class="hero-header">
     <i class="fa-solid fa-plate-wheat fa-2xl" style="color: #5ace62;"></i>
     <h1>${state.Header}</h1>
+    <h1>iMealPrep</h1>
     <p>
-      Image by
-      <a
+      Image by<a
         href="https://pixabay.com/users/goumbik-3752482/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2879213"
         >Lukas</a
       >
-      from
-      <a
+      from<a
         href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=2879213"
-        >Pixabay</a
+      >
+        Pixabay</a
       >
     </p>
   </header>

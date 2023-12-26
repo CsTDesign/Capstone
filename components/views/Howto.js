@@ -63,13 +63,15 @@ export default () => html`
       use calories, too, so multiplying your BMR by one of the following will
       determine the necessary calories to maintain weight.
     </p>
-    <ul>
-      <li>Sedentary: multiply BMR by 1.2</li>
-      <li>Lightly active: multiply BMR by 1.375</li>
-      <li>Moderately active: multiply BMR by 1.55</li>
-      <li>Active: multiply BMR by 1.725</li>
-      <li>Very active: multiply BMR by 1.9</li>
-    </ul>
+    <article class="measurement">
+      <ul>
+        <li>Sedentary: multiply BMR by 1.2</li>
+        <li>Lightly active: multiply BMR by 1.375</li>
+        <li>Moderately active: multiply BMR by 1.55</li>
+        <li>Active: multiply BMR by 1.725</li>
+        <li>Very active: multiply BMR by 1.9</li>
+      </ul>
+    </article>
     <p>
       Using our example person, his BMR is 1840 calories. If he visits the gym
       4-5 days per week, walks or bikes around his community, but works a desk
@@ -87,11 +89,13 @@ export default () => html`
       If you wish to lose weight, you should eat fewer calories. If you wish to
       build more muscle, you should eat more calories.
     </p>
-    <ul>
-      <li>Calorie Deficit: eat 500 fewer calories than calculated.</li>
-      <li>Calorie Maintenance: eat calculated amount.</li>
-      <li>Calorie Surplus: eat 250-500 more calories than calculated.</li>
-    </ul>
+    <article class="measurement">
+      <ul>
+        <li>Calorie Deficit: eat 500 fewer calories than calculated.</li>
+        <li>Calorie Maintenance: eat calculated amount.</li>
+        <li>Calorie Surplus: eat 250-500 more calories than calculated.</li>
+      </ul>
+    </article>
     <p>
       For our example person to lose weight, he should eat roughly 3000
       calories; to gain weight, roughly 3750-4000 calories.
@@ -109,11 +113,13 @@ export default () => html`
       from carbohydrates, or high calories with the majority from fat. Keep the
       following exchange rates in mind:
     </p>
-    <ul>
-      <li>1 gram of carbohydrate = 4 calories</li>
-      <li>1 gram of protein = 4 calories</li>
-      <li>1 gram of fat = 9 calories</li>
-    </ul>
+    <article class="measurement">
+      <ul>
+        <li>1 gram of carbohydrate = 4 calories</li>
+        <li>1 gram of protein = 4 calories</li>
+        <li>1 gram of fat = 9 calories</li>
+      </ul>
+    </article>
     <p>
       Protein is the most important macronutrient, as it helps promote muscle
       retention, muscle growth, and keeps you fuller longer. It is the easiest
@@ -154,12 +160,14 @@ export default () => html`
       In order for our example person to maintain his weight, here is his macro
       breakdown:
     </p>
-    <ul>
-      <li>3496 calories</li>
-      <li>72g fat</li>
-      <li>532g carbohydrates</li>
-      <li>180g protein</li>
-    </ul>
+    <article class="measurement">
+      <ul>
+        <li>3496 calories</li>
+        <li>72g fat</li>
+        <li>532g carbohydrates</li>
+        <li>180g protein</li>
+      </ul>
+    </article>
     <h3>In Closing</h3>
     <p>
       Your results may vary. Your amounts may be too high, or too low, depending

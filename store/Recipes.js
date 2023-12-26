@@ -1,4 +1,5 @@
 export default {
-    header: "iMealPrep",
-    view: "Recipes"
+  header: "iMealPrep",
+  view: "Recipes",
+  recipes: []
 };
