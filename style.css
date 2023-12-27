@@ -1,0 +1,237 @@
+@media (max-width: 549px) {
+  header {
+    height: 60vh;
+  }
+
+  .hidden--mobile {
+    display: none !important;
+  }
+
+  .navMenu {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: "Red Hat Display", sans-serif;
+  }
+
+  .navMenu > i {
+    font-size: 2em;
+    padding: 1rem;
+  }
+
+  .navMenu > ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0;
+  }
+
+  .navMenu > ul > li {
+    list-style-type: none;
+    padding: .5rem;
+  }
+}
+
+@media (max-width: 550px) {
+  * {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 550px) {
+  header {
+    height: 60vh;
+  }
+
+  .navMenu > ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 0;
+  }
+
+  .navMenu > ul > li {
+    display: inline-block;
+    flex-flow: column;
+    padding: .5rem .5rem;
+    text-decoration: none;
+  }
+
+  .navMenu > .fa-bars {
+    display: none;
+  }
+}
+
+.fa-plate-wheat {
+  align-items: center;
+  box-shadow: #555 5px 0 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-header {
+  align-items: center;
+  background-attachment: local;
+  background-image: url(docs/imgs/table-2879213.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  resize: both;
+  width: 100vw;
+}
+
+.hero-header h1 {
+  color: #5ace62;
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 5em;
+  margin-bottom:0.5em;
+  margin-top: 0;
+  text-align: center;
+  text-shadow: #555 5px 0 5px;
+}
+
+.hero-header p {
+  color: white;
+  display: inline-block;
+  text-align: center;
+}
+
+.measurement {
+  align-items: center;
+  border-color: #5ace62 !important;
+  border-radius: 5px;
+  box-shadow: #999 5px 0 5px;
+  box-sizing: border-box;
+  color: #5ace62;
+  display: flex;
+  flex-direction: column;
+  font-family: "Red Hat Display", sans-serif;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.navMenu {
+  align-items: center;
+  background-color:#5ace62;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex-flow: column;
+  font-family: "Red Hat Display", sans-serif;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.navMenu > ul > li {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.push {
+  height: 80px;
+}
+
+#foot-left {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  list-style: none;
+  margin: 0 auto;
+  padding: 5px;
+  text-decoration: none;
+}
+
+#foot-right {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+}
+
+#wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0 auto;
+  min-height: 100%;
+  padding: 0 0 100%;
+  position: relative;
+  width: 100%;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: darkgreen;
+}
+
+a:visited {
+  color: darkgreen;
+  font-weight: bolder;
+}
+
+body, html {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  height: 100%;
+}
+
+fieldset {
+  border-color: #5ace62;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #5ace62;
+  box-sizing: border-box;
+  bottom: 0;
+  font-family: "Red Hat Display", sans-serif;
+  height: 7rem;
+  position: fixed;
+  width: 100%;
+}
+
+footer a {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+h2 {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  text-shadow: #5ace62 2px 0 2px;
+}
+
+h3 {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 18px;
+  text-align: center;
+}
+
+label, input {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin: 3px;
+}
+
+legend {
+  border-radius: 5px;
+  background-color: #5ace62;
+  color: white;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+main {
+  margin: 10px;
+  text-align: left;
+}
+
+p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
