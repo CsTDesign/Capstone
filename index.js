@@ -22,6 +22,22 @@ function afterRender() {
   document.querySelector(".fa-bars").addEventListener("click", () => {
     document.querySelector(".navMenu > ul").classList.toggle("hidden--mobile");
   });
+  // suggest recipes based on ingredients selected
+  if (state.view === "Recipes") {
+    document.querySelector("#recipe-form").addEventListener("submit", event => {
+      event.preventDefault();
+
+      const ingredientList = event.target.elements; // or something of that nature - whatever would grab the value of the checkboxes being selected
+
+      axios
+        .get(
+          `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredientList}&number=2&apiKey=${PROCESS.ENV.SPOONACULAR_API}`
+        )
+        .then(response => {
+          store.Repices.recipes = response.data;
+        });
+    });
+  }
 }
 
 router.hooks({
