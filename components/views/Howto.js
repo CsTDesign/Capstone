@@ -5,10 +5,10 @@ export default () => html`
     <hr />
     <p>
       Before you begin to improve your kitchen skills, here's a little overview
-      of meal prepping. All recipes on iMealPrep feature nutrition labels to
-      help you track your calories or any other important micro- or
-      macro-nutrient&#40;s&#41;. Whether you want to lose weight, build muscle,
-      or maintain your overall health, tracking your nutrients is the key to
+      of meal prepping. All recipes results feature nutrition labels to help you
+      track your calories or any other important micro- or
+      macronutrient&#40;s&#41;. Whether you are losing weight, building muscle,
+      or maintaining your overall health, tracking your nutrients is the key to
       success.
     </p>
     <h3>Basal Metabolic Rate &#40;BMR&#41;</h3>
@@ -26,50 +26,74 @@ export default () => html`
         >improved in 1990</a
       >
       by Mifflin and St. Jeor, you can calculate your
-      <strong>Basal Metabolic Rate&#40;BMR&#41;</strong> based on your weight,
-      height, age, gender, etc. Keep in mind, you must use metric conversions to
-      achieve the most accurate result, so enter this information into an online
+      <strong>Basal Metabolic Rate &#40;BMR&#41;</strong> based on your weight,
+      height, age, gender, etc. Below are the equations when using imperial
+      measurements:
+    </p>
+    <article class="measurement">
+      <p>
+        Men's BMR = &#40;4.5 &#215; weight in lbs&#41; + &#40;16 &#215; height
+        in inches&#41; - &#40;5 &#215; age&#41; + 5
+      </p>
+      <p>
+        Women's BMR = &#40;4.5 &#215; weight in lbs&#41; + &#40;16 &#215; height
+        in inches&#41; - &#40;5 &#215; age&#41; - 161
+      </p>
+    </article>
+    <p>
+      However, for better accuracy, you should convert your weight and height to
+      metric measurements, which you can find by using an online metric
       calculator.
     </p>
     <article class="measurement">
       <p>
-        Men's BMR = &#40;10 × weight in kg&#41; + &#40;6.25 × height in cm&#41;
-        - &#40;5 × age&#41; + 5
+        Men's BMR = &#40;10 &#215; weight in kg&#41; + &#40;6.25 &#215; height
+        in cm&#41; - &#40;5 &#215; age&#41; + 5
       </p>
       <p>
-        Women's BMR = &#40;10 × weight in kg&#41; + &#40;6.25 × height in
-        cm&#41; - &#40;5 × age&#41; - 161
+        Women's BMR = &#40;10 &#215; weight in kg&#41; + &#40;6.25 &#215; height
+        in cm&#41; - &#40;5 &#215; age&#41; - 161
       </p>
     </article>
     <p>
-      The result of these equations is your daily calories needed to function,
-      even if you slept the whole day.
+      The result of either set of equations is your daily calories needed to
+      function, even if you slept the whole day.
     </p>
     <p>
       Let's assume we have a 25-year-old man, measuring 6 feet tall, weighing
-      180 pounds. After converting his weight and height to metric measurements,
-      here is his BMR equation:
+      180 pounds. Using imperial measurements for weight and height, his BMR
+      equation is:
     </p>
     <article class="measurement">
       <p>
-        &#40;10 × 81.7 kg&#41; + &#40;6.25 × 182.88 cm&#41; - &#40;5 × 25&#41; +
-        5 = 1840 calories
+        &#40;4.5 &#215; 180 lbs&#41; + &#40;16 &#215; 72 in&#41; - &#40;5 &#215;
+        25&#41; + 5 = 1840 calories
+      </p>
+    </article>
+    <p>
+      If we converted his weight and height to metric measurements, his BMR
+      equation is:
+    </p>
+    <article class="measurement">
+      <p>
+        &#40;10 &#215; 81.7 kg&#41; + &#40;6.25 &#215; 182.88 cm&#41; - &#40;5
+        &#215; 25&#41; + 5 = 1840 calories
       </p>
     </article>
     <h3>Your Activity</h3>
     <p>
       Since we have other such priorities as work, family, friends, and fitness
-      in our lives, we cannot sleep the whole day. All these other activities
-      use calories, too, so multiplying your BMR by one of the following will
-      determine the necessary calories to maintain weight.
+      in our lives, we cannot sleep the whole day. These other commitments use
+      calories, too, so multiplying your BMR by one of the following multipliers
+      will determine the necessary calories to maintain weight.
     </p>
     <article class="measurement">
       <ul>
-        <li>Sedentary: multiply BMR by 1.2</li>
-        <li>Lightly active: multiply BMR by 1.375</li>
-        <li>Moderately active: multiply BMR by 1.55</li>
-        <li>Active: multiply BMR by 1.725</li>
-        <li>Very active: multiply BMR by 1.9</li>
+        <li>Sedentary: BMR &#215; 1.2</li>
+        <li>Lightly active: BMR &#215; 1.375</li>
+        <li>Moderately active: BMR &#215; 1.55</li>
+        <li>Active: BMR &#215; 1.725</li>
+        <li>Very active: BMR &#215; 1.9</li>
       </ul>
     </article>
     <p>
@@ -78,7 +102,7 @@ export default () => html`
       job, we can say he's very active.
     </p>
     <article class="measurement">
-      <p>1840 × 1.9 = 3496</p>
+      <p>1840 &#215; 1.9 = 3496</p>
     </article>
     <p>
       To maintain his weight at this activity level, he must consume nearly 3500
@@ -108,10 +132,10 @@ export default () => html`
       carbohydrates, and proteins&#41;.
     </p>
     <p>
-      Each macronutrient has a calorie value per gram, and each food's breakdown
-      is different. A food could have low calories but the majority may come
-      from carbohydrates, or high calories with the majority from fat. Keep the
-      following exchange rates in mind:
+      Each macronutrient &#40;macro&#41; has a calorie value per gram, and each
+      food's breakdown is different. A food could have low calories but the
+      majority may come from carbohydrates, or high calories with the majority
+      from fat. Keep the following exchange rates in mind:
     </p>
     <article class="measurement">
       <ul>
@@ -128,26 +152,26 @@ export default () => html`
       protein.
     </p>
     <p>
-      Fats are the nutrient responsible for storing energy in your body for
-      later use. Too much fat can, however, lead to health problems such as
-      heart disease, so you should work to keep this number low; figure between
-      0.3-0.5 grams fat per pound of body weight. Meeting in the middle of that
-      range, our example person at 180 pounds should consume 72 grams fat.
+      Fats store energy in your body for later use. Too much fat, however, can
+      lead to health problems such as heart disease, so you should work to keep
+      this number low; figure between 0.3-0.5 grams fat per pound of body
+      weight. Meeting in the middle of that range, our example person at 180
+      pounds should consume 72 grams fat.
     </p>
     <p>
       After finding daily protein and fat intake, we can find the remainder of
       our calories which should come from carbohydrates like this:
     </p>
     <article class="measurement">
-      <p>180g protein × 4 = 720 calories from protein</p>
-      <p>72g fat × 9 = 648 calories from fat</p>
+      <p>180g protein &#215; 4 = 720 calories from protein</p>
+      <p>72g fat &#215; 9 = 648 calories from fat</p>
       <p>720 + 648 = 1368 total fat and protein calories</p>
     </article>
     <p>
-      After adding the fat and protein calories together, we can then subtract
-      that number from total daily calories to determine how many calories
-      should come from carbohydrates, the nutrient that provides quick energy,
-      usually in the form of fiber, sugar, or starch:
+      Carbohydrates &#40;Carbs&#41; provide quick energy, usually in the form of
+      fiber, sugar, or starch. After adding the fat and protein calories
+      together, we can then subtract that number from total daily calories to
+      determine how many calories should come from carbohydrates:
     </p>
     <article class="measurement">
       <p>3496 - 1368 = 2128 calories from carbohydrates</p>
