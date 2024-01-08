@@ -16,6 +16,7 @@ export default () => html`
         placeholder="First and Last Name"
         required
       />
+      <br />
       <label for="email">Email:</label>
       <input
         type="email"
@@ -24,8 +25,10 @@ export default () => html`
         placeholder="username@email.com"
         required
       />
+      <br />
       <label for="subject">Subject:</label>
       <input type="text" name="subject" id="subject" placeholder="Subject" />
+      <br />
       <div id="emailMsg">
         <label for="msg">Your message:</label>
         <textarea name="msg" id="msg" cols="30" rows="5"></textarea>

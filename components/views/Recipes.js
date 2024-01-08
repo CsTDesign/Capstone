@@ -60,8 +60,6 @@ export default () => html`
         <legend>Alcohol</legend>
         <input type="checkbox" name="absinthe" id="absinthe" />
         <label for="absinthe">Absinthe</label>
-        <input type="checkbox" name="advocaat" id="advocaat" />
-        <label for="advocaat">Advocaat</label>
         <input type="checkbox" name="amaretto" id="amaretto" />
         <label for="amaretto">Amaretto</label>
         <input type="checkbox" name="aperol" id="aperol" />
@@ -96,8 +94,6 @@ export default () => html`
         <label for="curacao">Cura&#231;ao</label>
         <input type="checkbox" name="daiquiri-mix" id="daiquiri-mix" />
         <label for="daiquiri-mix">Daiquiri Mix</label>
-        <input type="checkbox" name="drambuie" id="drambuie" />
-        <label for="drambuie">Drambuie</label>
         <input type="checkbox" name="gin" id="gin" />
         <label for="gin">Gin</label>
         <input type="checkbox" name="grappa" id="grappa" />
@@ -174,6 +170,10 @@ export default () => html`
         <label for="cornmeal">Cornmeal</label>
         <input type="checkbox" name="cream-of-tartar" id="cream-of-tartar" />
         <label for="cream-of-tartar">Cream of Tartar</label>
+        <input type="checkbox" name="dumpling-wrapper" id="dumpling-wrapper" />
+        <label for="dumpling-wrapper">Dumpling Wrapper</label>
+        <input type="checkbox" name="egg-roll-wrapper" id="egg-roll-wrapper" />
+        <label for="egg-roll-wrapper">Egg Roll Wrapper</label>
         <input type="checkbox" name="egg-wrap" id="egg-wrap" />
         <label for="egg-wrap">Egg Wrap</label>
         <input type="checkbox" name="flaxseed-meal" id="flaxseed-meal" />
@@ -181,7 +181,7 @@ export default () => html`
         <input type="checkbox" name="flour" id="flour" />
         <label for="flour">Flour</label>
         <input type="checkbox" name="gelatin" id="gelatin" />
-        <label for="gelatin">Gelatin &#41;Jell-O&#41;</label>
+        <label for="gelatin">Gelatin &#40;Jell-O&#41;</label>
         <input type="checkbox" name="guar-gum" id="guar-gum" />
         <label for="guar-gum">Guar Gum</label>
         <input type="checkbox" name="meringue-powder" id="meringue-powder" />
@@ -232,10 +232,10 @@ export default () => html`
         <label for="vital-wheat-gluten">Vital Wheat Gluten</label>
         <input
           type="checkbox"
-          name="whipped-cream-stabalizer"
-          id="whipped-cream-stabalizer"
+          name="whipped-cream-stabilizer"
+          id="whipped-cream-stabilizer"
         />
-        <label for="whipped-cream-stabalizer">Whipped Cream Stabalizer</label>
+        <label for="whipped-cream-stabilizer">Whipped Cream Stabilizer</label>
         <input type="checkbox" name="wonton" id="wonton" />
         <label for="wonton">Wonton</label>
         <input type="checkbox" name="xanthan-gum" id="xanthan-gum" />
@@ -246,30 +246,542 @@ export default () => html`
       <hr />
       <fieldset class="recipe">
         <legend>Bread</legend>
+        <input type="checkbox" name="artisan-roll" id="artisan-roll" />
+        <label for="artisan-roll">Artisan Roll</label>
+        <input type="checkbox" name="bagel" id="bagel" />
+        <label for="bagel">Bagel</label>
+        <input type="checkbox" name="baguette" id="baguette" />
+        <label for="baguette">Baguette</label>
+        <input type="checkbox" name="brioche" id="brioche" />
+        <label for="brioche">Brioche</label>
+        <input type="checkbox" name="challah" id="challah" />
+        <label for="challah">Challah</label>
+        <input type="checkbox" name="croissant" id="croissant" />
+        <label for="croissant">Croissant</label>
+        <input type="checkbox" name="ezekiel" id="ezekiel" />
+        <label for="ezekiel">Ezekiel</label>
+        <input type="checkbox" name="flatbread" id="flatbread" />
+        <label for="flatbread">Flatbread</label>
+        <input type="checkbox" name="focaccia" id="focaccia" />
+        <label for="focaccia">Focaccia</label>
+        <input type="checkbox" name="garlic-bread" id="garlic-bread" />
+        <label for="garlic-bread">Garlic Bread</label>
+        <input type="checkbox" name="hawaiian-roll" id="hawaiian-roll" />
+        <label for="hawaiian-roll">Hawaiian Roll</label>
+        <input type="checkbox" name="italian-bread" id="italian-bread" />
+        <label for="italian-bread">Italian Bread</label>
+        <input type="checkbox" name="milk-bread" id="milk-bread" />
+        <label for="milk-bread">Milk Bread</label>
+        <input type="checkbox" name="muffin" id="muffin" />
+        <label for="muffin">Muffin</label>
+        <input type="checkbox" name="pita-bread" id="pita-bread" />
+        <label for="pita-bread">Pita Bread</label>
+        <input type="checkbox" name="potato-bread" id="potato-bread" />
+        <label for="potato-bread">Potato Bread</label>
+        <input type="checkbox" name="pretzel-bun" id="pretzel-bun" />
+        <label for="pretzel-bun">Pretzel Bun</label>
+        <input type="checkbox" name="pumpernickel" id="pumpernickel" />
+        <label for="pumpernickel">Pumpernickel</label>
+        <input type="checkbox" name="roti" id="roti" />
+        <label for="roti">Roti</label>
+        <input type="checkbox" name="rye-bread" id="rye-bread" />
+        <label for="rye-bread">Rye Bread</label>
+        <input type="checkbox" name="seed-bread" id="seed-bread" />
+        <label for="seed-bread">Seed Bread</label>
+        <input type="checkbox" name="sourdough-bread" id="sourdough-bread" />
+        <label for="sourdough-bread">Sourdough Bread</label>
+        <input type="checkbox" name="sprouted-bread" id="sprouted-bread" />
+        <label for="sprouted-bread">Sprouted Bread</label>
+        <input type="checkbox" name="sweet-bread" id="sweet-bread" />
+        <label for="sweet-bread">Sweet Bread</label>
+        <input type="checkbox" name="wheat-bread" id="wheat-bread" />
+        <label for="wheat-bread">Wheat Bread</label>
+        <input type="checkbox" name="white-bread" id="white-bread" />
+        <label for="white-bread">White Bread</label>
       </fieldset>
       <hr />
       <fieldset class="recipe">
         <legend>Canned Items</legend>
+        <input type="checkbox" name="baked-beans" id="baked-beans" />
+        <label for="baked-beans">Baked Beans</label>
+        <input type="checkbox" name="black-olives" id="black-olives" />
+        <label for="black-olives">Black Olives</label>
+        <input type="checkbox" name="candied-jalapeno" id="candied-jalapeno" />
+        <label for="candied-jalapeno">Candied Jalape&#241;o</label>
+        <input type="checkbox" name="canned-anchovy" id="canned-anchovy" />
+        <label for="canned-anchovy">Canned Anchovy</label>
+        <input type="checkbox" name="canned-apple" id="canned-apple" />
+        <label for="canned-apple">Canned Apple</label>
+        <input type="checkbox" name="canned-apricot" id="canned-apricot" />
+        <label for="canned-apricot">Canned Apricot</label>
+        <input type="checkbox" name="canned-artichoke" id="canned-artichoke" />
+        <label for="canned-artichoke">Canned Artichoke</label>
+        <input type="checkbox" name="canned-asparagus" id="canned-asparagus" />
+        <label for="canned-asparagus">Canned Asparagus</label>
+        <input type="checkbox" name="canned-beans" id="canned-beans" />
+        <label for="canned-beans">Canned Beans</label>
+        <input
+          type="checkbox"
+          name="canned-black-eyed-peas"
+          id="canned-black-eyed-peas"
+        />
+        <label for="canned-black-eyed-peas">Canned Black-Eyed Peas</label>
+        <input type="checkbox" name="canned-carrot" id="canned-carrot" />
+        <label for="canned-carrot">Canned Carrot</label>
+        <input type="checkbox" name="canned-cherry" id="canned-cherry" />
+        <label for="canned-cherry">Canned Cherry</label>
+        <input type="checkbox" name="canned-chicken" id="canned-chicken" />
+        <label for="canned-chicken">Canned Chicken</label>
+        <input type="checkbox" name="canned-chickpeas" id="canned-chickpeas" />
+        <label for="canned-chickpeas">Canned Chickpeas</label>
+        <input type="checkbox" name="canned-corn" id="canned-corn" />
+        <label for="canned-corn">Canned Corn</label>
+        <input
+          type="checkbox"
+          name="canned-green-beans"
+          id="canned-green-beans"
+        />
+        <label for="canned-green-beans">Canned Green Beans</label>
+        <input
+          type="checkbox"
+          name="canned-mandarin-orange"
+          id="canned-mandarin-orange"
+        />
+        <label for="canned-mandarin-orange">Canned Mandarin Orange</label>
+        <input type="checkbox" name="canned-mushroom" id="canned-mushroom" />
+        <label for="canned-mushroom">Canned Mushroom</label>
+        <input type="checkbox" name="canned-peach" id="canned-peach" />
+        <label for="canned-peach">Canned Peach</label>
+        <input type="checkbox" name="canned-peas" id="canned-peas" />
+        <label for="canned-peas">Canned Peas</label>
+        <input
+          type="checkbox"
+          name="canned-pie-filling"
+          id="canned-pie-filling"
+        />
+        <label for="canned-pie-filling">Canned Pie Filling</label>
+        <input type="checkbox" name="canned-pineapple" id="canned-pineapple" />
+        <label for="canned-pineapple">Canned Pineapple</label>
+        <input type="checkbox" name="canned-potato" id="canned-potato" />
+        <label for="canned-potato">Canned Potato</label>
+        <input type="checkbox" name="canned-pumpkin" id="canned-pumpkin" />
+        <label for="canned-pumpkin">Canned Pumpkin</label>
+        <input type="checkbox" name="canned-sardines" id="canned-sardines" />
+        <label for="canned-sardines">Canned Sardines</label>
+        <input
+          type="checkbox"
+          name="canned-sweet-potato"
+          id="canned-sweet-potato"
+        />
+        <label for="canned-sweet-potato">Canned Sweet Potato</label>
+        <input type="checkbox" name="canned-tomato" id="canned-tomato" />
+        <label for="canned-tomato">Canned Tomato</label>
+        <input type="checkbox" name="canned-tuna" id="canned-tuna" />
+        <label for="canned-tuna">Canned Tuna</label>
+        <input type="checkbox" name="canned-yam" id="canned-yam" />
+        <label for="canned-yam">Canned Yam</label>
+        <input type="checkbox" name="capers" id="capers" />
+        <label for="capers">Capers</label>
+        <input type="checkbox" name="chili-beans" id="chili-beans" />
+        <label for="chili-beans">Chili Beans</label>
+        <input
+          type="checkbox"
+          name="chipotle-in-adobo-sauce"
+          id="chipotle-in-adobo-sauce"
+        />
+        <label for="chipotle-in-adobo-sauce">Chipotle in Adobo Sauce</label>
+        <input type="checkbox" name="corn-relish" id="corn-relish" />
+        <label for="corn-relish">Corn Relish</label>
+        <input type="checkbox" name="corned-beef" id="corned-beef" />
+        <label for="corned-beef">Corned Beef</label>
+        <input type="checkbox" name="creamed-corn" id="creamed-corn" />
+        <label for="creamed-corn">Creamed Corn</label>
+        <input
+          type="checkbox"
+          name="diced-green-chiles"
+          id="diced-green-chiles"
+        />
+        <label for="diced-green-chiles">Diced Green Chiles</label>
+        <input
+          type="checkbox"
+          name="dill-pickle-relish"
+          id="dill-pickle-relish"
+        />
+        <label for="dill-pickle-relish">Dill Pickle Relish</label>
+        <input type="checkbox" name="fruit-cocktail" id="fruit-cocktail" />
+        <label for="fruit-cocktail">Fruit Cocktail</label>
+        <input type="checkbox" name="green-olives" id="green-olives" />
+        <label for="green-olives">Green Olives</label>
+        <input type="checkbox" name="kalamata-olives" id="kalamata-olives" />
+        <label for="kalamata-olives">Kalamata Olives</label>
+        <input
+          type="checkbox"
+          name="maraschino-cherry"
+          id="maraschino-cherry"
+        />
+        <label for="maraschino-cherry">Maraschino Cherry</label>
+        <input type="checkbox" name="onion-paste" id="onion-paste" />
+        <label for="onion-paste">Onion Paste</label>
+        <input type="checkbox" name="pickle" id="pickle" />
+        <label for="pickle">Pickle</label>
+        <input type="checkbox" name="pickle-juice" id="pickle-juice" />
+        <label for="pickle-juice">Pickle Juice</label>
+        <input type="checkbox" name="pickled-beet" id="pickled-beet" />
+        <label for="pickled-beet">Pickled Beet</label>
+        <input type="checkbox" name="pickled-ginger" id="pickled-ginger" />
+        <label for="pickled-ginger">Pickled Ginger</label>
+        <input type="checkbox" name="pickled-onion" id="pickled-onion" />
+        <label for="pickled-onion">Pickled Onion</label>
+        <input type="checkbox" name="pickled-peppers" id="pickled-peppers" />
+        <label for="pickled-peppers">Pickled Peppers</label>
+        <input type="checkbox" name="pork-beans" id="pork-beans" />
+        <label for="pork-beans">Pork & Beans</label>
+        <input type="checkbox" name="refried-beans" id="refried-beans" />
+        <label for="refried-beans">Refried Beans</label>
+        <input type="checkbox" name="relish" id="relish" />
+        <label for="relish">Relish</label>
+        <input type="checkbox" name="sauerkraut" id="sauerkraut" />
+        <label for="sauerkraut">Sauerkraut</label>
+        <input type="checkbox" name="spam" id="spam" />
+        <label for="spam">Spam</label>
+        <input
+          type="checkbox"
+          name="sun-dried-tomatoes-in-oil"
+          id="sun-dried-tomatoes-in-oil"
+        />
+        <label for="sun-dried-tomatoes-in-oil">Sun-Dried Tomatoes in Oil</label>
       </fieldset>
       <hr />
       <fieldset class="recipe">
         <legend>Condiments, Sauces, Spreads, & Dips</legend>
+        <input type="checkbox" name="alfredo-sauce" id="alfredo-sauce" />
+        <label for="alfredo-sauce">Alfredo Sauce</label>
+        <input type="checkbox" name="almond-butter" id="almond-butter" />
+        <label for="almond-butter">Almond Butter</label>
+        <input type="checkbox" name="bacon-jam" id="bacon-jam" />
+        <label for="bacon-jam">Bacon Jam</label>
+        <input type="checkbox" name="balsamic-glaze" id="balsamic-glaze" />
+        <label for="balsamic-glaze">Balsamic Glaze</label>
+        <input type="checkbox" name="barbecue-sauce" id="barbecue-sauce" />
+        <label for="barbecue-sauce">Barbecue Sauce</label>
+        <input type="checkbox" name="bean-dip" id="bean-dip" />
+        <label for="bean-dip">Bean Dip</label>
+        <input type="checkbox" name="bechamel" id="bechamel" />
+        <label for="bechamel">B&#233;chamel</label>
+        <input type="checkbox" name="bolognese-sauce" id="bolognese-sauce" />
+        <label for="bolognese-sauce">Bolognese Sauce</label>
+        <input type="checkbox" name="brown-mustard" id="brown-mustard" />
+        <label for="brown-mustard">Brown Mustard</label>
+        <input type="checkbox" name="buffalo-sauce" id="buffalo-sauce" />
+        <label for="buffalo-sauce">Buffalo Sauce</label>
+        <input type="checkbox" name="butter-chicken" id="butter-chicken" />
+        <label for="butter-chicken">Butter Chicken</label>
+        <input type="checkbox" name="cashew-butter" id="cashew-butter" />
+        <label for="cashew-butter">Cashew Butter</label>
+        <input type="checkbox" name="chamoy-sauce" id="chamoy-sauce" />
+        <label for="chamoy-sauce">Chamoy Sauce</label>
+        <input type="checkbox" name="cheese-dip" id="cheese-dip" />
+        <label for="cheese-dip">Cheese Dip</label>
+        <input type="checkbox" name="cheese-spread" id="cheese-spread" />
+        <label for="cheese-spread">Cheese Spread</label>
+        <input type="checkbox" name="chili-paste" id="chili-paste" />
+        <label for="chili-paste">Chili Paste</label>
+        <input type="checkbox" name="chili-sauce" id="chili-sauce" />
+        <label for="chili-sauce">Chili Sauce</label>
+        <input
+          type="checkbox"
+          name="chimichurri-sauce"
+          id="chimichurri-sauce"
+        />
+        <label for="chimichurri-sauce">Chimichurri Sauce</label>
+        <input type="checkbox" name="chutney" id="chutney" />
+        <label for="chutney">Chutney</label>
+        <input type="checkbox" name="cocktail-sauce" id="cocktail-sauce" />
+        <label for="cocktail-sauce">Cocktail Sauce</label>
+        <input type="checkbox" name="coconut-aminos" id="coconut-aminos" />
+        <label for="coconut-aminos">Coconut Aminos</label>
+        <input type="checkbox" name="corn-salsa" id="corn-salsa" />
+        <label for="corn-salsa">Corn Salsa</label>
+        <input type="checkbox" name="crab-paste" id="crab-paste" />
+        <label for="crab-paste">Crab Paste</label>
+        <input type="checkbox" name="cranberry-sauce" id="cranberry-sauce" />
+        <label for="cranberry-sauce">Cranberry Sauce</label>
+        <input
+          type="checkbox"
+          name="crisp-onion-spread"
+          id="crisp-onion-spread"
+        />
+        <label for="crisp-onion-spread">Crisp Onion Spread</label>
+        <input type="checkbox" name="deviled-ham" id="deviled-ham" />
+        <label for="deviled-ham">Deviled Ham</label>
+        <input type="checkbox" name="dijon-mustard" id="dijon-mustard" />
+        <label for="dijon-mustard">Dijon Mustard</label>
+        <input type="checkbox" name="duck-sauce" id="duck-sauce" />
+        <label for="duck-sauce">Duck Sauce</label>
+        <input type="checkbox" name="eel-sauce" id="eel-sauce" />
+        <label for="eel-sauce">Eel Sauce</label>
+        <input type="checkbox" name="enchilada-sauce" id="enchilada-sauce" />
+        <label for="enchilada-sauce">Enchilada Sauce</label>
+        <input type="checkbox" name="fish-sauce" id="fish-sauce" />
+        <label for="fish-sauce">Fish Sauce</label>
+        <input type="checkbox" name="french-onion-dip" id="french-onion-dip" />
+        <label for="french-onion-dip">French Onion Dip</label>
+        <input type="checkbox" name="garlic-butter" id="garlic-butter" />
+        <label for="garlic-butter">Garlic Butter</label>
+        <input type="checkbox" name="garlic-paste" id="garlic-paste" />
+        <label for="garlic-paste">Garlic Paste</label>
+        <input type="checkbox" name="giardiniera" id="giardiniera" />
+        <label for="giardiniera">Giardiniera</label>
+        <input type="checkbox" name="ginger-paste" id="ginger-paste" />
+        <label for="ginger-paste">Ginger Paste</label>
+        <input type="checkbox" name="gochujang" id="gochujang" />
+        <label for="gochujang">Gochujang</label>
+        <input type="checkbox" name="grape-must" id="grape-must" />
+        <label for="grape-must">Grape Must</label>
+        <input type="checkbox" name="gravy" id="gravy" />
+        <label for="gravy">Gravy</label>
+        <input type="checkbox" name="guacamole" id="guacamole" />
+        <label for="guacamole">Guacamole</label>
+        <input type="checkbox" name="hoisin" id="hoisin" />
+        <label for="hoisin">Hoisin</label>
+        <input type="checkbox" name="hollandaise" id="hollandaise" />
+        <label for="hollandaise">Hollandaise</label>
+        <input type="checkbox" name="honey-mustard" id="honey-mustard" />
+        <label for="honey-mustard">Honey Mustard</label>
+        <input
+          type="checkbox"
+          name="horseradish-sauce"
+          id="horseradish-sauce"
+        />
+        <label for="horseradish-sauce">Horseradish Sauce</label>
+        <input type="checkbox" name="hot-pepper-jelly" id="hot-pepper-jelly" />
+        <label for="hot-pepper-jelly">Hot Pepper Jelly</label>
+        <input type="checkbox" name="hot-sauce" id="hot-sauce" />
+        <label for="hot-sauce">Hot Sauce</label>
+        <input type="checkbox" name="hummus" id="hummus" />
+        <label for="hummus">Hummus</label>
+        <input type="checkbox" name="ketchup" id="ketchup" />
+        <label for="ketchup">Ketchup</label>
+        <input type="checkbox" name="kung-pao" id="kung-pao" />
+        <label for="kung-pao">Kung Pao</label>
+        <input type="checkbox" name="mango-salsa" id="mango-salsa" />
+        <label for="mango-salsa">Mango Salsa</label>
+        <input type="checkbox" name="marinara-sauce" id="marinara-sauce" />
+        <label for="marinara-sauce">Marinara Sauce</label>
+        <input type="checkbox" name="mustard" id="mustard" />
+        <label for="mustard">Mustard</label>
+        <input type="checkbox" name="mustard-paste" id="mustard-paste" />
+        <label for="mustard-paste">Mustard Paste</label>
+        <input type="checkbox" name="oyster-sauce" id="oyster-sauce" />
+        <label for="oyster-sauce">Oyster Sauce</label>
+        <input type="checkbox" name="pad-thai-sauce" id="pad-thai-sauce" />
+        <label for="pad-thai-sauce">Pad Thai Sauce</label>
+        <input type="checkbox" name="peanut-butter" id="peanut-butter" />
+        <label for="peanut-butter">Peanut Butter</label>
+        <input type="checkbox" name="peri-peri" id="peri-peri" />
+        <label for="peri-peri">Peri Peri</label>
+        <input type="checkbox" name="pesto" id="pesto" />
+        <label for="pesto">Pesto</label>
+        <input type="checkbox" name="pico-de-gallo" id="pico-de-gallo" />
+        <label for="pico-de-gallo">Pico de Gallo</label>
+        <input type="checkbox" name="pineapple-salsa" id="pineapple-salsa" />
+        <label for="pineapple-salsa">Pineapple Salsa</label>
+        <input type="checkbox" name="queso" id="queso" />
+        <label for="queso">Queso</label>
+        <input type="checkbox" name="remoulade" id="remoulade" />
+        <label for="remoulade">Remoulade</label>
+        <input type="checkbox" name="salsa" id="salsa" />
+        <label for="salsa">Salsa</label>
+        <input type="checkbox" name="salsa-verde" id="salsa-verde" />
+        <label for="salsa-verde">Salsa Verde</label>
+        <input type="checkbox" name="schezwan" id="schezwan" />
+        <label for="schezwan">Schezwan</label>
+        <input type="checkbox" name="shrimp-paste" id="shrimp-paste" />
+        <label for="shrimp-paste">Shrimp Paste</label>
+        <input type="checkbox" name="sloppy-joe-sauce" id="sloppy-joe-sauce" />
+        <label for="sloppy-joe-sauce">Sloppy Joe Sauce</label>
+        <input type="checkbox" name="sofrito" id="sofrito" />
+        <label for="sofrito">Sofrito</label>
+        <input type="checkbox" name="soy-sauce" id="soy-sauce" />
+        <label for="soy-sauce">Soy Sauce</label>
+        <input type="checkbox" name="spinach-dip" id="spinach-dip" />
+        <label for="spinach-dip">Spinach Dip</label>
+        <input type="checkbox" name="sriracha-sauce" id="sriracha-sauce" />
+        <label for="sriracha-sauce">Sriracha Sauce</label>
+        <input type="checkbox" name="steak-sauce" id="steak-sauce" />
+        <label for="steak-sauce">Steak Sauce</label>
+        <input type="checkbox" name="stewed-tomato" id="stewed-tomato" />
+        <label for="stewed-tomato">Stewed Tomato</label>
+        <input type="checkbox" name="stir-fry-sauce" id="stir-fry-sauce" />
+        <label for="stir-fry-sauce">Stir-Fry Sauce</label>
+        <input type="checkbox" name="sunflower-butter" id="sunflower-butter" />
+        <label for="sunflower-butter">Sunflower Butter</label>
+        <input type="checkbox" name="sweet-sour-sauce" id="sweet-sour-sauce" />
+        <label for="sweet-sour-sauce">Sweet & Sour Sauce</label>
+        <input type="checkbox" name="taco-sauce" id="taco-sauce" />
+        <label for="taco-sauce">Taco Sauce</label>
+        <input type="checkbox" name="tahini" id="tahini" />
+        <label for="tahini">Tahini</label>
+        <input type="checkbox" name="tamari" id="tamari" />
+        <label for="tamari">Tamari</label>
+        <input type="checkbox" name="tapenade" id="tapenade" />
+        <label for="tapenade">Tapenade</label>
+        <input type="checkbox" name="tartar-sauce" id="tartar-sauce" />
+        <label for="tartar-sauce">Tartar Sauce</label>
+        <input type="checkbox" name="teriyaki-sauce" id="teriyaki-sauce" />
+        <label for="teriyaki-sauce">Teriyaki Sauce</label>
+        <input type="checkbox" name="thai-chili-paste" id="thai-chili-paste" />
+        <label for="thai-chili-paste">Thai Chili Paste</label>
+        <input type="checkbox" name="thai-chili-sauce" id="thai-chili-sauce" />
+        <label for="thai-chili-sauce">Thai Chili Sauce</label>
+        <input
+          type="checkbox"
+          name="thai-peanut-sauce"
+          id="thai-peanut-sauce"
+        />
+        <label for="thai-peanut-sauce">Thai Peanut Sauce</label>
+        <input type="checkbox" name="tikka-masala" id="tikka-masala" />
+        <label for="tikka-masala">Tikka Masala</label>
+        <input type="checkbox" name="tzatziki" id="tzatziki" />
+        <label for="tzatziki">Tzatziki</label>
+        <input type="checkbox" name="vodka-sauce" id="vodka-sauce" />
+        <label for="vodka-sauce">Vodka Sauce</label>
+        <input type="checkbox" name="wasabi-sauce" id="wasabi-sauce" />
+        <label for="wasabi-sauce">Wasabi Sauce</label>
+        <input
+          type="checkbox"
+          name="whipped-cream-cheese"
+          id="whipped-cream-cheese"
+        />
+        <label for="whipped-cream-cheese">Whipped Cream Cheese</label>
+        <input
+          type="checkbox"
+          name="wholegrain-mustard"
+          id="wholegrain-mustard"
+        />
+        <label for="wholegrain-mustard">Wholegrain Mustard</label>
+        <input
+          type="checkbox"
+          name="worcestershire-sauce"
+          id="worcestershire-sauce"
+        />
+        <label for="worcestershire-sauce">Worcestershire Sauce</label>
+        <input type="checkbox" name="yum-yum-sauce" id="yum-yum-sauce" />
+        <label for="yum-yum-sauce">Yum-Yum Sauce</label>
       </fieldset>
       <hr />
       <fieldset class="recipe">
         <legend>Cooking Oils & Fats</legend>
+        <input type="checkbox" name="almond-oil" id="almond-oil" />
+        <label for="almond-oil">Almond Oil</label>
+        <input type="checkbox" name="avocado-oil" id="avocado-oil" />
+        <label for="avocado-oil">Avocado Oil</label>
+        <input type="checkbox" name="bacon-grease" id="bacon-grease" />
+        <label for="bacon-grease">Bacon Grease</label>
+        <input type="checkbox" name="beef-dripping" id="beef-dripping" />
+        <label for="beef-dripping">Beef Dripping</label>
+        <input type="checkbox" name="beef-fat" id="beef-fat" />
+        <label for="beef-fat">Beef Fat</label>
+        <input type="checkbox" name="butter-spray" id="butter-spray" />
+        <label for="butter-spray">Butter Spray</label>
+        <input type="checkbox" name="cacao-butter" id="cacao-butter" />
+        <label for="cacao-butter">Cacao Butter</label>
+        <input
+          type="checkbox"
+          name="canola-cottonseed-oil"
+          id="canola-cottonseed-oil"
+        />
+        <label for="canola-cottonseed-oil"
+          >Canola &#40;Cottonseed&#41; Oil</label
+        >
+        <input type="checkbox" name="castor-oil" id="castor-oil" />
+        <label for="castor-oil">Castor Oil</label>
+        <input type="checkbox" name="chicken-dripping" id="chicken-dripping" />
+        <label for="chicken-dripping">Chicken Dripping</label>
+        <input type="checkbox" name="chili-oil" id="chili-oil" />
+        <label for="chili-oil">Chili Oil</label>
+        <input type="checkbox" name="coconut-oil" id="coconut-oil" />
+        <label for="coconut-oil">Coconut Oil</label>
+        <input type="checkbox" name="corn-oil" id="corn-oil" />
+        <label for="corn-oil">Corn Oil</label>
+        <input type="checkbox" name="crisco" id="crisco" />
+        <label for="crisco">Crisco</label>
+        <input type="checkbox" name="duck-fat" id="duck-fat" />
+        <label for="duck-fat">Duck Fat</label>
+        <input
+          type="checkbox"
+          name="extra-virgin-olive-oil"
+          id="extra-virgin-olive-oil"
+        />
+        <label for="extra-virgin-olive-oil">Extra Virgin Olive Oil</label>
+        <input type="checkbox" name="flaxseed-oil" id="flaxseed-oil" />
+        <label for="flaxseed-oil">Flaxseed Oil</label>
+        <input type="checkbox" name="ginger-oil" id="ginger-oil" />
+        <label for="ginger-oil">Ginger Oil</label>
+        <input type="checkbox" name="goose-fat" id="goose-fat" />
+        <label for="goose-fat">Goose Fat</label>
+        <input type="checkbox" name="grapeseed-oil" id="grapeseed-oil" />
+        <label for="grapeseed-oil">Grapeseed Oil</label>
+        <input type="checkbox" name="hempseed-oil" id="hempseed-oil" />
+        <label for="hempseed-oil">Hempseed Oil</label>
+        <input type="checkbox" name="lamb-fat" id="lamb-fat" />
+        <label for="lamb-fat">Lamb Fat</label>
+        <input type="checkbox" name="lard" id="lard" />
+        <label for="lard">Lard</label>
+        <input type="checkbox" name="lemon-oil" id="lemon-oil" />
+        <label for="lemon-oil">Lemon Oil</label>
+        <input type="checkbox" name="macadamia-oil" id="macadamia-oil" />
+        <label for="macadamia-oil">Macadamia Oil</label>
+        <input
+          type="checkbox"
+          name="medium-chain-triglyceride"
+          id="medium-chain-triglyceride"
+        />
+        <label for="medium-chain-triglyceride">Medium-Chain Triglyceride</label>
+        <input type="checkbox" name="mustard-oil" id="mustard-oil" />
+        <label for="mustard-oil">Mustard Oil</label>
+        <input type="checkbox" name="olive-oil" id="olive-oil" />
+        <label for="olive-oil">Olive Oil</label>
+        <input type="checkbox" name="palm-oil" id="palm-oil" />
+        <label for="palm-oil">Palm Oil</label>
+        <input type="checkbox" name="peanut-oil" id="peanut-oil" />
+        <label for="peanut-oil">Peanut Oil</label>
+        <input type="checkbox" name="pork-dripping" id="pork-dripping" />
+        <label for="pork-dripping">Pork Dripping</label>
+        <input type="checkbox" name="pork-fat" id="pork-fat" />
+        <label for="pork-fat">Pork Fat</label>
+        <input type="checkbox" name="rapeseed-oil" id="rapeseed-oil" />
+        <label for="rapeseed-oil">Rapeseed Oil</label>
+        <input type="checkbox" name="safflower-oil" id="safflower-oil" />
+        <label for="safflower-oil">Safflower Oil</label>
+        <input type="checkbox" name="schmaltz" id="schmaltz" />
+        <label for="schmaltz">Schmaltz</label>
+        <input type="checkbox" name="sesame-oil" id="sesame-oil" />
+        <label for="sesame-oil">Sesame Oil</label>
+        <input type="checkbox" name="shea-butter" id="shea-butter" />
+        <label for="shea-butter">Shea Butter</label>
+        <input type="checkbox" name="soybean-oil" id="soybean-oil" />
+        <label for="soybean-oil">Soybean Oil</label>
+        <input type="checkbox" name="sunflower-oil" id="sunflower-oil" />
+        <label for="sunflower-oil">Sunflower Oil</label>
+        <input type="checkbox" name="tallow" id="tallow" />
+        <label for="tallow">Tallow</label>
+        <input type="checkbox" name="truffle-oil" id="truffle-oil" />
+        <label for="truffle-oil">Truffle Oil</label>
+        <input type="checkbox" name="walnut-oil" id="walnut-oil" />
+        <label for="walnut-oil">Walnut Oil</label>
       </fieldset>
       <hr />
       <fieldset class="recipe">
         <legend>Dairy & Cheese</legend>
         <input type="checkbox" name="american-cheese" id="american-cheese" />
         <label for="american-cheese">American Cheese</label>
-        <input type="checkbox" name="asadero" id="asadero" />
-        <label for="asadero">Asadero</label>
-        <input type="checkbox" name="asiago" id="asiago" />
-        <label for="asiago">Asiago</label>
-        <input type="checkbox" name="blue-cheese" id="blue-cheese" />
-        <label for="blue-cheese">Blue Cheese</label>
+        <input type="checkbox" name="asadero-cheese" id="asadero-cheese" />
+        <label for="asadero-cheese">Asadero Cheese</label>
+        <input type="checkbox" name="asiago-cheese" id="asiago-cheese" />
+        <label for="asiago-cheese">Asiago Cheese</label>
+        <input type="checkbox" name="bleu-cheese" id="bleu-cheese" />
+        <label for="bleu-cheese">Bleu Cheese</label>
         <input type="checkbox" name="brie" id="brie" />
         <label for="brie">Brie</label>
         <input type="checkbox" name="butter" id="butter" />
@@ -298,8 +810,8 @@ export default () => html`
         <label for="coffee-creamer">Coffee Creamer</label>
         <input type="checkbox" name="colby-jack" id="colby-jack" />
         <label for="colby-jack">Colby Jack</label>
-        <input type="checkbox" name="cotija" id="cotija" />
-        <label for="cotija">Cotija</label>
+        <input type="checkbox" name="cotija-cheese" id="cotija-cheese" />
+        <label for="cotija-cheese">Cotija Cheese</label>
         <input type="checkbox" name="cottage-cheese" id="cottage-cheese" />
         <label for="cottage-cheese">Cottage Cheese</label>
         <input type="checkbox" name="cream-cheese" id="cream-cheese" />
@@ -332,10 +844,10 @@ export default () => html`
         <label for="goat-cheese">Goat Cheese</label>
         <input type="checkbox" name="goat-milk" id="goat-milk" />
         <label for="goat-milk">Goat Milk</label>
-        <input type="checkbox" name="gouda" id="gouda" />
-        <label for="gouda">Gouda</label>
-        <input type="checkbox" name="gruyere" id="gruyere" />
-        <label for="gruyere">Gruyere</label>
+        <input type="checkbox" name="gouda-cheese" id="gouda-cheese" />
+        <label for="gouda-cheese">Gouda Cheese</label>
+        <input type="checkbox" name="gruyere-cheese" id="gruyere-cheese" />
+        <label for="gruyere-cheese">Gruyere Cheese</label>
         <input type="checkbox" name="greek-yogurt" id="greek-yogurt" />
         <label for="greek-yogurt">Greek Yogurt</label>
         <input type="checkbox" name="half-half" id="half-half" />
@@ -356,12 +868,6 @@ export default () => html`
         <label for="kefir">Kefir</label>
         <input type="checkbox" name="khoya" id="khoya" />
         <label for="khoya">Khoya</label>
-        <input
-          type="checkbox"
-          name="liquid-egg-whites"
-          id="liquid-egg-whites"
-        />
-        <label for="liquid-egg-whites">Liquid Egg Whites</label>
         <input type="checkbox" name="marble-cheese" id="marble-cheese" />
         <label for="marble-cheese">Marble Cheese</label>
         <input type="checkbox" name="margarine" id="margarine" />
@@ -414,22 +920,396 @@ export default () => html`
       <hr />
       <fieldset class="recipe">
         <legend>Dessert</legend>
+        <input type="checkbox" name="apple-butter" id="apple-butter" />
+        <label for="apple-butter">Apple Butter</label>
+        <input type="checkbox" name="apple-jelly" id="apple-jelly" />
+        <label for="apple-jelly">Apple Jelly</label>
+        <input type="checkbox" name="applesauce" id="applesauce" />
+        <label for="applesauce">Applesauce</label>
+        <input type="checkbox" name="apricot-jam" id="apricot-jam" />
+        <label for="apricot-jam">Apricot Jam</label>
+        <input type="checkbox" name="baking-chocolate" id="baking-chocolate" />
+        <label for="baking-chocolate">Baking Chocolate</label>
+        <input type="checkbox" name="biscotti" id="biscotti" />
+        <label for="biscotti">Biscotti</label>
+        <input
+          type="checkbox"
+          name="blackberry-preserves"
+          id="blackberry-preserves"
+        />
+        <label for="blackberry-preserves">Blackberry Preserves</label>
+        <input type="checkbox" name="blueberry-jam" id="blueberry-jam" />
+        <label for="blueberry-jam">Blueberry Jam</label>
+        <input type="checkbox" name="butterscotch" id="butterscotch" />
+        <label for="butterscotch">Butterscotch</label>
+        <input type="checkbox" name="cacao-nib" id="cacao-nib" />
+        <label for="cacao-nib">Cacao Nib</label>
+        <input type="checkbox" name="candied-fruit" id="candied-fruit" />
+        <label for="candied-fruit">Candied Fruit</label>
+        <input type="checkbox" name="candied-ginger" id="candied-ginger" />
+        <label for="candied-ginger">Candied Ginger</label>
+        <input type="checkbox" name="candy-cane" id="candy-cane" />
+        <label for="candy-cane">Candy Cane</label>
+        <input type="checkbox" name="candy-coating" id="candy-coating" />
+        <label for="candy-coating">Candy Coating</label>
+        <input type="checkbox" name="candy-corn" id="candy-corn" />
+        <label for="candy-corn">Candy Corn</label>
+        <input type="checkbox" name="caramels" id="caramels" />
+        <label for="caramels">Caramels</label>
+        <input type="checkbox" name="caramel-sauce" id="caramel-sauce" />
+        <label for="caramel-sauce">Caramel Sauce</label>
+        <input type="checkbox" name="chocolate-candy" id="chocolate-candy" />
+        <label for="chocolate-candy">Chocolate Candy</label>
+        <input
+          type="checkbox"
+          name="chocolate-hazelnut-spread"
+          id="chocolate-hazelnut-spread"
+        />
+        <label for="chocolate-hazelnut-spread"
+          >Chocolate Hazelnut Spread &#40;Nutella&#41;</label
+        >
+        <input
+          type="checkbox"
+          name="chocolate-peanut-butter"
+          id="chocolate-peanut-butter"
+        />
+        <label for="chocolate-peanut-butter">Chocolate Peanut Butter</label>
+        <input type="checkbox" name="chocolate-sauce" id="chocolate-sauce" />
+        <label for="chocolate-sauce">Chocolate Sauce</label>
+        <input type="checkbox" name="cocoa-powder" id="cocoa-powder" />
+        <label for="cocoa-powder">Cocoa Powder</label>
+        <input type="checkbox" name="cookies" id="cookies" />
+        <label for="cookies">Cookies</label>
+        <input type="checkbox" name="donuts" id="donuts" />
+        <label for="donuts">Donuts</label>
+        <input type="checkbox" name="fudge" id="fudge" />
+        <label for="fudge">Fudge</label>
+        <input type="checkbox" name="gingersnap" id="gingersnap" />
+        <label for="gingersnap">Gingersnap</label>
+        <input type="checkbox" name="graham-cracker" id="graham-cracker" />
+        <label for="graham-cracker">Graham Cracker</label>
+        <input type="checkbox" name="grape-jelly" id="grape-jelly" />
+        <label for="grape-jelly">Grape Jelly</label>
+        <input type="checkbox" name="gumdrop" id="gumdrop" />
+        <label for="gumdrop">Gumdrop</label>
+        <input type="checkbox" name="ice-cream-bowl" id="ice-cream-bowl" />
+        <label for="ice-cream-bowl">Ice Cream Bowl</label>
+        <input type="checkbox" name="ice-cream-cone" id="ice-cream-cone" />
+        <label for="ice-cream-cone">Ice Cream Cone</label>
+        <input type="checkbox" name="ice-cream-cup" id="ice-cream-cup" />
+        <label for="ice-cream-cup">Ice Cream Cup</label>
+        <input type="checkbox" name="instant-pudding" id="instant-pudding" />
+        <label for="instant-pudding">Instant Pudding</label>
+        <input type="checkbox" name="italian-ice" id="italian-ice" />
+        <label for="italian-ice">Italian Ice</label>
+        <input type="checkbox" name="licorice" id="licorice" />
+        <label for="licorice">Licorice</label>
+        <input type="checkbox" name="marmalade" id="marmalade" />
+        <label for="marmalade">Marmalade</label>
+        <input type="checkbox" name="marshmallow" id="marshmallow" />
+        <label for="marshmallow">Marshmallow</label>
+        <input type="checkbox" name="meringue" id="meringue" />
+        <label for="meringue">Meringue</label>
+        <input type="checkbox" name="mms" id="mms" />
+        <label for="mms">M&M's</label>
+        <input type="checkbox" name="peach-preserves" id="peach-preserves" />
+        <label for="peach-preserves">Peach Preserves</label>
+        <input
+          type="checkbox"
+          name="peanut-butter-cup"
+          id="peanut-butter-cup"
+        />
+        <label for="peanut-butter-cup">Peanut Butter Cup</label>
+        <input type="checkbox" name="peppermints" id="peppermints" />
+        <label for="peppermints">Peppermints</label>
+        <input type="checkbox" name="peppermint-patty" id="peppermint-patty" />
+        <label for="peppermint-patty">Peppermint Patty</label>
+        <input type="checkbox" name="pumpkin-butter" id="pumpkin-butter" />
+        <label for="pumpkin-butter">Pumpkin Butter</label>
+        <input type="checkbox" name="raspberry-jam" id="raspberry-jam" />
+        <label for="raspberry-jam">Raspberry Jam</label>
+        <input type="checkbox" name="sorbet" id="sorbet" />
+        <label for="sorbet">Sorbet</label>
+        <input type="checkbox" name="strawberry-jam" id="strawberry-jam" />
+        <label for="strawberry-jam">Strawberry Jam</label>
+        <input type="checkbox" name="strawberry-puree" id="strawberry-puree" />
+        <label for="strawberry-puree">Strawberry Puree</label>
+        <input type="checkbox" name="strawberry-sauce" id="strawberry-sauce" />
+        <label for="strawberry-sauce">Strawberry Sauce</label>
+        <input type="checkbox" name="stroopwafel" id="stroopwafel" />
+        <label for="stroopwafel">Stroopwafel</label>
+        <input type="checkbox" name="toaster-pastry" id="toaster-pastry" />
+        <label for="toaster-pastry">Toaster Pastry</label>
+        <input type="checkbox" name="vanilla-wafer" id="vanilla-wafer" />
+        <label for="vanilla-wafer">Vanilla Wafer</label>
+        <input type="checkbox" name="waffles" id="waffles" />
+        <label for="waffles">Waffles</label>
       </fieldset>
       <hr />
       <fieldset class="recipe">
         <legend>Drinks</legend>
+        <input type="checkbox" name="acai-juice" id="acai-juice" />
+        <label for="acai-juice">A&#231;ai Juice</label>
+        <input type="checkbox" name="apple-cider" id="apple-cider" />
+        <label for="apple-cider">Apple Cider</label>
+        <input type="checkbox" name="apple-juice" id="apple-juice" />
+        <label for="apple-juice">Apple Juice</label>
+        <input type="checkbox" name="banana-juice" id="banana-juice" />
+        <label for="banana-juice">Banana Juice</label>
+        <input type="checkbox" name="beet-juice" id="beet-juice" />
+        <label for="beet-juice">Beet Juice</label>
+        <input
+          type="checkbox"
+          name="blackcurrant-juice"
+          id="blackcurrant-juice"
+        />
+        <label for="blackcurrant-juice">Blackcurrant Juice</label>
+        <input type="checkbox" name="carrot-juice" id="carrot-juice" />
+        <label for="carrot-juice">Carrot Juice</label>
+        <input type="checkbox" name="chai-tea" id="chai-tea" />
+        <label for="chai-tea">Chai Tea</label>
+        <input type="checkbox" name="chamomile" id="chamomile" />
+        <label for="chamomile">Chamomile</label>
+        <input type="checkbox" name="cherry-juice" id="cherry-juice" />
+        <label for="cherry-juice">Cherry Juice</label>
+        <input type="checkbox" name="cherry-soda" id="cherry-soda" />
+        <label for="cherry-soda">Cherry Soda</label>
+        <input type="checkbox" name="chocolate-drink" id="chocolate-drink" />
+        <label for="chocolate-drink">Chocolate Drink</label>
+        <input type="checkbox" name="club-soda" id="club-soda" />
+        <label for="club-soda">Club Soda</label>
+        <input type="checkbox" name="coconut-water" id="coconut-water" />
+        <label for="coconut-water">Coconut Water</label>
+        <input type="checkbox" name="coffee" id="coffee" />
+        <label for="coffee">Coffee</label>
+        <input type="checkbox" name="cola" id="cola" />
+        <label for="cola">Cola</label>
+        <input type="checkbox" name="cranberry-juice" id="cranberry-juice" />
+        <label for="cranberry-juice">Cranberry Juice</label>
+        <input type="checkbox" name="cream-of-coconut" id="cream-of-coconut" />
+        <label for="cream-of-coconut">Cream of Coconut</label>
+        <input type="checkbox" name="cream-soda" id="cream-soda" />
+        <label for="cream-soda">Cream Soda</label>
+        <input type="checkbox" name="dr-pepper" id="dr-pepper" />
+        <label for="dr-pepper">Dr. Pepper</label>
+        <input type="checkbox" name="eggnog" id="eggnog" />
+        <label for="eggnog">Eggnog</label>
+        <input type="checkbox" name="energy-drink" id="energy-drink" />
+        <label for="energy-drink">Energy Drink</label>
+        <input type="checkbox" name="espresso" id="espresso" />
+        <label for="espresso">Espresso</label>
+        <input type="checkbox" name="fruit-punch" id="fruit-punch" />
+        <label for="fruit-punch">Fruit Punch</label>
+        <input type="checkbox" name="ginger-ale" id="ginger-ale" />
+        <label for="ginger-ale">Ginger Ale</label>
+        <input type="checkbox" name="ginger-beer" id="ginger-beer" />
+        <label for="ginger-beer">Ginger Beer</label>
+        <input type="checkbox" name="grape-juice" id="grape-juice" />
+        <label for="grape-juice">Grape Juice</label>
+        <input type="checkbox" name="grape-soda" id="grape-soda" />
+        <label for="grape-soda">Grape Soda</label>
+        <input type="checkbox" name="grapefruit-juice" id="grapefruit-juice" />
+        <label for="grapefruit-juice">Grapefruit Juice</label>
+        <input type="checkbox" name="grapefruit-soda" id="grapefruit-soda" />
+        <label for="grapefruit-soda">Grapefruit Soda</label>
+        <input type="checkbox" name="green-tea" id="green-tea" />
+        <label for="green-tea">Green Tea</label>
+        <input type="checkbox" name="guava-juice" id="guava-juice" />
+        <label for="guava-juice">Guava Juice</label>
+        <input type="checkbox" name="herbal-tea" id="herbal-tea" />
+        <label for="herbal-tea">Herbal Tea</label>
+        <input type="checkbox" name="hibiscus-tea" id="hibiscus-tea" />
+        <label for="hibiscus-tea">Hibiscus Tea</label>
+        <input type="checkbox" name="kombucha" id="kombucha" />
+        <label for="kombucha">Kombucha</label>
+        <input type="checkbox" name="kool-aid" id="kool-aid" />
+        <label for="kool-aid">Kool-Aid</label>
+        <input type="checkbox" name="lemon-lime-soda" id="lemon-lime-soda" />
+        <label for="lemon-lime-soda">Lemon-Lime Soda</label>
+        <input type="checkbox" name="lemon-water" id="lemon-water" />
+        <label for="lemon-water">Lemon Water</label>
+        <input type="checkbox" name="lemonade" id="lemonade" />
+        <label for="lemonade">Lemonade</label>
+        <input type="checkbox" name="lemonade-mix" id="lemonade-mix" />
+        <label for="lemonade-mix">Lemonade Mix</label>
+        <input
+          type="checkbox"
+          name="malted-milk-powder"
+          id="malted-milk-powder"
+        />
+        <label for="malted-milk-powder"
+          >Malted Milk Powder &#40;Ovaltine&#41;</label
+        >
+        <input type="checkbox" name="orange-juice" id="orange-juice" />
+        <label for="orange-juice">Orange Juice</label>
+        <input type="checkbox" name="orange-soda" id="orange-soda" />
+        <label for="orange-soda">Orange Soda</label>
+        <input
+          type="checkbox"
+          name="passion-fruit-juice"
+          id="passion-fruit-juice"
+        />
+        <label for="passion-fruit-juice">Passion Fruit Juice</label>
+        <input type="checkbox" name="pineapple-juice" id="pineapple-juice" />
+        <label for="pineapple-juice">Pineapple Juice</label>
+        <input
+          type="checkbox"
+          name="pomegranate-juice"
+          id="pomegranate-juice"
+        />
+        <label for="pomegranate-juice">Pomegranate Juice</label>
+        <input type="checkbox" name="prune-juice" id="prune-juice" />
+        <label for="prune-juice">Prune Juice</label>
+        <input type="checkbox" name="root-beer" id="root-beer" />
+        <label for="root-beer">Root Beer</label>
+        <input type="checkbox" name="sparkling-water" id="sparkling-water" />
+        <label for="sparkling-water">Sparkling Water</label>
+        <input type="checkbox" name="sports-drink" id="sports-drink" />
+        <label for="sports-drink">Sports Drink</label>
+        <input type="checkbox" name="strawberry-juice" id="strawberry-juice" />
+        <label for="strawberry-juice">Strawberry Juice</label>
+        <input type="checkbox" name="strawberry-soda" id="strawberry-soda" />
+        <label for="strawberry-soda">Strawberry Soda</label>
+        <input type="checkbox" name="tomato-juice" id="tomato-juice" />
+        <label for="tomato-juice">Tomato Juice</label>
+        <input type="checkbox" name="tonic-water" id="tonic-water" />
+        <label for="tonic-water">Tonic Water</label>
       </fieldset>
       <hr />
       <fieldset class="recipe">
         <legend>Dressing & Vinegar</legend>
+        <input type="checkbox" name="aioli" id="aioli" />
+        <label for="aioli">Aioli</label>
+        <input
+          type="checkbox"
+          name="apple-cider-vinegar"
+          id="apple-cider-vinegar"
+        />
+        <label for="apple-cider-vinegar">Apple Cider Vinegar</label>
+        <input
+          type="checkbox"
+          name="avocado-lime-dressing"
+          id="avocado-lime-dressing"
+        />
+        <label for="avocado-lime-dressing">Avocado-Lime Dressing</label>
+        <input
+          type="checkbox"
+          name="balsamic-vinaigrette"
+          id="balsamic-vinaigrette"
+        />
+        <label for="balsamic-vinaigrette">Balsamic Vinaigrette</label>
+        <input
+          type="checkbox"
+          name="bleu-cheese-dressing"
+          id="bleu-cheese-dressing"
+        />
+        <label for="bleu-cheese-dressing">Bleu Cheese Dressing</label>
+        <input
+          type="checkbox"
+          name="brown-rice-vinegar"
+          id="brown-rice-vinegar"
+        />
+        <label for="brown-rice-vinegar">Brown Rice Vinegar</label>
+        <input type="checkbox" name="caesar-dressing" id="caesar-dressing" />
+        <label for="caesar-dressing">Caesar Dressing</label>
+        <input
+          type="checkbox"
+          name="chili-lime-dressing"
+          id="chili-lime-dressing"
+        />
+        <label for="chili-lime-dressing">Chili-Lime Dressing</label>
+        <input type="checkbox" name="cole-slaw" id="cole-slaw" />
+        <label for="cole-slaw">Cole Slaw</label>
+        <input type="checkbox" name="creamy-balsamic" id="creamy-balsamic" />
+        <label for="creamy-balsamic">Creamy Balsamic</label>
+        <input
+          type="checkbox"
+          name="distilled-vinegar"
+          id="distilled-vinegar"
+        />
+        <label for="distilled-vinegar">Distilled Vinegar</label>
+        <input type="checkbox" name="french-dressing" id="french-dressing" />
+        <label for="french-dressing">French Dressing</label>
+        <input type="checkbox" name="greek-dressing" id="greek-dressing" />
+        <label for="greek-dressing">Greek Dressing</label>
+        <input type="checkbox" name="green-goddess" id="green-goddess" />
+        <label for="green-goddess">Green Goddess</label>
+        <input
+          type="checkbox"
+          name="honey-mustard-dressing"
+          id="honey-mustard-dressing"
+        />
+        <label for="honey-mustard-dressing">Honey Mustard Dressing</label>
+        <input type="checkbox" name="italian-dressing" id="italian-dressing" />
+        <label for="italian-dressing">Italian Dressing</label>
+        <input type="checkbox" name="malt-vinegar" id="malt-vinegar" />
+        <label for="malt-vinegar">Malt Vinegar</label>
+        <input type="checkbox" name="mayonnaise" id="mayonnaise" />
+        <label for="mayonnaise">Mayonnaise</label>
+        <input type="checkbox" name="miso-dressing" id="miso-dressing" />
+        <label for="miso-dressing">Miso Dressing</label>
+        <input type="checkbox" name="onion-dressing" id="onion-dressing" />
+        <label for="onion-dressing">Onion Dressing</label>
+        <input
+          type="checkbox"
+          name="poppyseed-dressing"
+          id="poppyseed-dressing"
+        />
+        <label for="poppyseed-dressing">Poppyseed Dressing</label>
+        <input type="checkbox" name="ranch-dressing" id="ranch-dressing" />
+        <label for="ranch-dressing">Ranch Dressing</label>
+        <input
+          type="checkbox"
+          name="raspberry-vinaigrette"
+          id="raspberry-vinaigrette"
+        />
+        <label for="raspberry-vinaigrette">Raspberry Vinaigrette</label>
+        <input
+          type="checkbox"
+          name="red-wine-vinaigrette"
+          id="red-wine-vinaigrette"
+        />
+        <label for="red-wine-vinaigrette">Red Wine Vinaigrette</label>
+        <input type="checkbox" name="red-wine-vinegar" id="red-wine-vinegar" />
+        <label for="red-wine-vinegar">Red Wine Vinegar</label>
+        <input
+          type="checkbox"
+          name="rice-wine-vinegar"
+          id="rice-wine-vinegar"
+        />
+        <label for="rice-wine-vinegar">Rice Wine Vinegar</label>
+        <input type="checkbox" name="russian-dressing" id="russian-dressing" />
+        <label for="russian-dressing">Russian Dressing</label>
+        <input type="checkbox" name="sesame-dressing" id="sesame-dressing" />
+        <label for="sesame-dressing">Sesame Dressing</label>
+        <input type="checkbox" name="sherry-vinegar" id="sherry-vinegar" />
+        <label for="sherry-vinegar">Sherry Vinegar</label>
+        <input
+          type="checkbox"
+          name="sweet-chili-sauce"
+          id="sweet-chili-sauce"
+        />
+        <label for="sweet-chili-sauce">Sweet Chili Sauce</label>
+        <input
+          type="checkbox"
+          name="tomato-vinaigrette"
+          id="tomato-vinaigrette"
+        />
+        <label for="tomato-vinaigrette">Tomato Vinaigrette</label>
+        <input type="checkbox" name="thousand-island" id="thousand-island" />
+        <label for="thousand-island">Thousand Island</label>
+        <input
+          type="checkbox"
+          name="white-wine-vinegar"
+          id="white-wine-vinegar"
+        />
+        <label for="white-wine-vinegar">White Wine Vinegar</label>
       </fieldset>
       <hr />
       <fieldset class="recipe">
         <legend>Fruits</legend>
         <input type="checkbox" name="acai-berry" id="acai-berry" />
         <label for="acai-berry">A&#231;ai Berry</label>
-        <input type="checkbox" name="amla" id="amla" />
-        <label for="amla">Amla</label>
         <input type="checkbox" name="apple" id="apple" />
         <label for="apple">Apple</label>
         <input type="checkbox" name="apricot" id="apricot" />
@@ -446,8 +1326,6 @@ export default () => html`
         <label for="blueberry">Blueberry</label>
         <input type="checkbox" name="boysenberry" id="boysenberry" />
         <label for="boysenberry">Boysenberry</label>
-        <input type="checkbox" name="calamansi" id="calamansi" />
-        <label for="calamansi">Calamansi</label>
         <input type="checkbox" name="cantaloupe" id="cantaloupe" />
         <label for="cantaloupe">Cantaloupe</label>
         <input type="checkbox" name="cherry" id="cherry" />
@@ -508,8 +1386,6 @@ export default () => html`
         <label for="huckleberry">Huckleberry</label>
         <input type="checkbox" name="jackfruit" id="jackfruit" />
         <label for="jackfruit">Jackfruit</label>
-        <input type="checkbox" name="jujube" id="jujube" />
-        <label for="jujube">Jujube</label>
         <input type="checkbox" name="juniper-berry" id="juniper-berry" />
         <label for="juniper-berry">Juniper Berry</label>
         <input type="checkbox" name="kiwi" id="kiwi" />
@@ -562,8 +1438,6 @@ export default () => html`
         <label for="prune">Prune</label>
         <input type="checkbox" name="raisin" id="raisin" />
         <label for="raisin">Raisin</label>
-        <input type="checkbox" name="rambutan" id="rambutan" />
-        <label for="rambutan">Rambutan</label>
         <input type="checkbox" name="raspberry" id="raspberry" />
         <label for="raspberry">Raspberry</label>
         <input type="checkbox" name="rhubarb" id="rhubarb" />
@@ -582,26 +1456,26 @@ export default () => html`
         <label for="star-fruit">Star Fruit</label>
         <input type="checkbox" name="strawberry" id="strawberry" />
         <label for="strawberry">Strawberry</label>
-        <input type="checkbox" name="sultana" id="sultana" />
-        <label for="sultana">Sultana</label>
-        <input type="checkbox" name="tamarillo" id="tamarillo" />
-        <label for="tamarillo">Tamarillo</label>
         <input type="checkbox" name="tamarind" id="tamarind" />
         <label for="tamarind">Tamarind</label>
         <input type="checkbox" name="tangelo" id="tangelo" />
         <label for="tangelo">Tangelo</label>
         <input type="checkbox" name="watermelon" id="watermelon" />
         <label for="watermelon">Watermelon</label>
-        <input type="checkbox" name="yuzu" id="yuzu" />
-        <label for="yuzu">Yuzu</label>
       </fieldset>
       <hr />
       <fieldset class="recipe">
         <legend>Grains & Pasta</legend>
+        <input type="checkbox" name="amaranth" id="amaranth" />
+        <label for="amaranth">Amaranth</label>
+        <input type="checkbox" name="angel-hair-pasta" id="angel-hair-pasta" />
+        <label for="angel-hair-pasta">Angel Hair Pasta</label>
         <input type="checkbox" name="barley" id="barley" />
-        <label for="barley">barley</label>
+        <label for="barley">Barley</label>
         <input type="checkbox" name="cauliflower-rice" id="cauliflower-rice" />
         <label for="cauliflower-rice">Cauliflower Rice</label>
+        <input type="checkbox" name="corn-flakes" id="corn-flakes" />
+        <label for="corn-flakes">Corn Flakes</label>
         <input type="checkbox" name="couscous" id="couscous" />
         <label for="couscous">Couscous</label>
         <input type="checkbox" name="cream-of-wheat" id="cream-of-wheat" />
@@ -614,26 +1488,72 @@ export default () => html`
         <label for="crispy-rice-cereal">Crispy Rice Cereal</label>
         <input type="checkbox" name="durum-wheat" id="durum-wheat" />
         <label for="durum-wheat">Durum Wheat</label>
+        <input type="checkbox" name="egg-noodle" id="egg-noodle" />
+        <label for="egg-noodle">Egg Noodle</label>
         <input type="checkbox" name="farro" id="farro" />
         <label for="farro">Farro</label>
+        <input type="checkbox" name="fettucine" id="fettucine" />
+        <label for="fettucine">Fettucine</label>
+        <input type="checkbox" name="fusilli" id="fusilli" />
+        <label for="fusilli">Fusilli</label>
+        <input type="checkbox" name="gnocchi" id="gnocchi" />
+        <label for="gnocchi">Gnocchi</label>
         <input type="checkbox" name="granola" id="granola" />
         <label for="granola">Granola</label>
         <input type="checkbox" name="grits" id="grits" />
         <label for="grits">Grits</label>
+        <input type="checkbox" name="kelp-noodle" id="kelp-noodle" />
+        <label for="kelp-noodle">Kelp Noodle</label>
+        <input type="checkbox" name="lasagna" id="lasagna" />
+        <label for="lasagna">Lasagna</label>
+        <input type="checkbox" name="linguini" id="linguini" />
+        <label for="linguini">Linguini</label>
+        <input type="checkbox" name="macaroni" id="macaroni" />
+        <label for="macaroni">Macaroni</label>
+        <input type="checkbox" name="manicotti" id="manicotti" />
+        <label for="manicotti">Manicotti</label>
         <input type="checkbox" name="muesli" id="muesli" />
         <label for="muesli">Muesli</label>
         <input type="checkbox" name="oats" id="oats" />
         <label for="oats">Oats</label>
+        <input type="checkbox" name="orzo" id="orzo" />
+        <label for="orzo">Orzo</label>
+        <input type="checkbox" name="penne" id="penne" />
+        <label for="penne">Penne</label>
         <input type="checkbox" name="pilaf" id="pilaf" />
         <label for="pilaf">Pilaf</label>
         <input type="checkbox" name="quinoa" id="quinoa" />
         <label for="quinoa">Quinoa</label>
+        <input type="checkbox" name="ramen" id="ramen" />
+        <label for="ramen">Ramen</label>
+        <input type="checkbox" name="ravioli" id="ravioli" />
+        <label for="ravioli">Ravioli</label>
         <input type="checkbox" name="rice" id="rice" />
         <label for="rice">Rice</label>
+        <input type="checkbox" name="rice-noodle" id="rice-noodle" />
+        <label for="rice-noodle">Rice Noodle</label>
+        <input type="checkbox" name="rigatoni" id="rigatoni" />
+        <label for="rigatoni">Rigatoni</label>
+        <input type="checkbox" name="rotini" id="rotini" />
+        <label for="rotini">Rotini</label>
         <input type="checkbox" name="semolina" id="semolina" />
         <label for="semolina">Semolina</label>
+        <input type="checkbox" name="shredded-wheat" id="shredded-wheat" />
+        <label for="shredded-wheat">Shredded Wheat</label>
         <input type="checkbox" name="sorghum" id="sorghum" />
         <label for="sorghum">Sorghum</label>
+        <input type="checkbox" name="spaghetti" id="spaghetti" />
+        <label for="spaghetti">Spaghetti</label>
+        <input type="checkbox" name="tagliatelle" id="tagliatelle" />
+        <label for="tagliatelle">Tagliatelle</label>
+        <input type="checkbox" name="tortellini" id="tortellini" />
+        <label for="tortellini">Tortellini</label>
+        <input type="checkbox" name="vermicelli" id="vermicelli" />
+        <label for="vermicelli">Vermicelli</label>
+        <input type="checkbox" name="yuba-noodle" id="yuba-noodle" />
+        <label for="yuba-noodle">Yuba Noodle</label>
+        <input type="checkbox" name="ziti" id="ziti" />
+        <label for="ziti">Ziti</label>
       </fieldset>
       <hr />
       <fieldset class="recipe">
@@ -736,6 +1656,74 @@ export default () => html`
       <hr />
       <fieldset class="recipe">
         <legend>Salty Food</legend>
+        <input type="checkbox" name="breadcrumbs" id="breadcrumbs" />
+        <label for="breadcrumbs">Breadcrumbs</label>
+        <input type="checkbox" name="cheese-puffs" id="cheese-puffs" />
+        <label for="cheese-puffs">Cheese Puffs</label>
+        <input type="checkbox" name="corn-chip" id="corn-chip" />
+        <label for="corn-chip">Corn Chip</label>
+        <input type="checkbox" name="corn-tortilla" id="corn-tortilla" />
+        <label for="corn-tortilla">Corn Tortilla</label>
+        <input type="checkbox" name="cornbread" id="cornbread" />
+        <label for="cornbread">Cornbread</label>
+        <input type="checkbox" name="cracker" id="cracker" />
+        <label for="cracker">Cracker</label>
+        <input type="checkbox" name="crouton" id="crouton" />
+        <label for="crouton">Crouton</label>
+        <input type="checkbox" name="crumpet" id="crumpet" />
+        <label for="crumpet">Crumpet</label>
+        <input type="checkbox" name="flour-tortilla" id="flour-tortilla" />
+        <label for="flour-tortilla">Flour Tortilla</label>
+        <input type="checkbox" name="french-fries" id="french-fries" />
+        <label for="french-fries">French Fries</label>
+        <input type="checkbox" name="onion-ring" id="onion-ring" />
+        <label for="onion-ring">Onion Ring</label>
+        <input type="checkbox" name="pita-chip" id="pita-chip" />
+        <label for="pita-chip">Pita Chip</label>
+        <input type="checkbox" name="plantain-chip" id="plantain-chip" />
+        <label for="plantain-chip">Plantain Chip</label>
+        <input type="checkbox" name="popcorn" id="popcorn" />
+        <label for="popcorn">Popcorn</label>
+        <input type="checkbox" name="pork-rind" id="pork-rind" />
+        <label for="pork-rind">Pork Rind</label>
+        <input type="checkbox" name="potato-chip" id="potato-chip" />
+        <label for="potato-chip">Potato Chip</label>
+        <input type="checkbox" name="pretzel" id="pretzel" />
+        <label for="pretzel">Pretzel</label>
+        <input type="checkbox" name="rice-cake" id="rice-cake" />
+        <label for="rice-cake">Rice Cake</label>
+        <input type="checkbox" name="sev" id="sev" />
+        <label for="sev">Sev</label>
+        <input type="checkbox" name="spinach-wrap" id="spinach-wrap" />
+        <label for="spinach-wrap">Spinach Wrap</label>
+        <input type="checkbox" name="stuffing-mix" id="stuffing-mix" />
+        <label for="stuffing-mix">Stuffing Mix</label>
+        <input
+          type="checkbox"
+          name="sweet-potato-fries"
+          id="sweet-potato-fries"
+        />
+        <label for="sweet-potato-fries">Sweet Potato Fries</label>
+        <input type="checkbox" name="taco-shell" id="taco-shell" />
+        <label for="taco-shell">Taco Shell</label>
+        <input type="checkbox" name="tater-tots" id="tater-tots" />
+        <label for="tater-tots">Tater Tots</label>
+        <input type="checkbox" name="tortilla-chip" id="tortilla-chip" />
+        <label for="tortilla-chip">Tortilla Chip</label>
+        <input type="checkbox" name="tostada-shell" id="tostada-shell" />
+        <label for="tostada-shell">Tostada Shell</label>
+        <input type="checkbox" name="vegetable-chip" id="vegetable-chip" />
+        <label for="vegetable-chip">Vegetable Chip</label>
+        <input type="checkbox" name="wasabi-pea" id="wasabi-pea" />
+        <label for="wasabi-pea">Wasabi Pea</label>
+        <input type="checkbox" name="wheat-tortilla" id="wheat-tortilla" />
+        <label for="wheat-tortilla">Wheat Tortilla</label>
+        <input
+          type="checkbox"
+          name="yorkshire-pudding"
+          id="yorkshire-pudding"
+        />
+        <label for="yorkshire-pudding">Yorkshire Pudding</label>
       </fieldset>
       <hr />
       <fieldset class="recipe">
@@ -806,12 +1794,8 @@ export default () => html`
         <label for="halibut">Halibut</label>
         <input type="checkbox" name="herring" id="herring" />
         <label for="herring">Herring</label>
-        <input type="checkbox" name="hijiki" id="hijiki" />
-        <label for="hijiki">Hijiki</label>
         <input type="checkbox" name="jellyfish" id="jellyfish" />
         <label for="jellyfish">Jellyfish</label>
-        <input type="checkbox" name="john-dory" id="john-dory" />
-        <label for="john-dory">John Dory</label>
         <input type="checkbox" name="kelp" id="kelp" />
         <label for="kelp">Kelp</label>
         <input type="checkbox" name="kingfish" id="kingfish" />
@@ -842,8 +1826,6 @@ export default () => html`
         <label for="octopus">Octopus</label>
         <input type="checkbox" name="ogo" id="ogo" />
         <label for="ogo">Ogo</label>
-        <input type="checkbox" name="orange-roughy" id="orange-roughy" />
-        <label for="orange-roughy">Orange Roughy</label>
         <input type="checkbox" name="oyster" id="oyster" />
         <label for="oyster">Oyster</label>
         <input type="checkbox" name="pangasius" id="pangasius" />
@@ -898,8 +1880,6 @@ export default () => html`
         <label for="swordfish">Swordfish</label>
         <input type="checkbox" name="tilapia" id="tilapia" />
         <label for="tilapia">Tilapia</label>
-        <input type="checkbox" name="tinapa" id="tinapa" />
-        <label for="tinapa">Tinapa</label>
         <input type="checkbox" name="trout" id="trout" />
         <label for="trout">Trout</label>
         <input type="checkbox" name="tuna" id="tuna" />
@@ -918,8 +1898,6 @@ export default () => html`
         <label for="whiting">Whiting</label>
         <input type="checkbox" name="yellowtail" id="yellowtail" />
         <label for="yellowtail">Yellowtail</label>
-        <input type="checkbox" name="zander" id="zander" />
-        <label for="zander">Zander</label>
       </fieldset>
       <hr />
       <fieldset class="recipe">
@@ -962,6 +1940,136 @@ export default () => html`
       <hr />
       <fieldset class="recipe">
         <legend>Soup, Stew, Broth, & Stock</legend>
+        <input type="checkbox" name="bean-soup-mix" id="bean-soup-mix" />
+        <label for="bean-soup-mix">Bean Soup Mix</label>
+        <input type="checkbox" name="beef-broth" id="beef-broth" />
+        <label for="beef-broth">Beef Broth</label>
+        <input type="checkbox" name="beef-stock" id="beef-stock" />
+        <label for="beef-stock">Beef Stock</label>
+        <input type="checkbox" name="bone-broth" id="bone-broth" />
+        <label for="bone-broth">Bone Broth</label>
+        <input type="checkbox" name="bouillon-cube" id="bouillon-cube" />
+        <label for="bouillon-cube">Bouillon Cube</label>
+        <input type="checkbox" name="bovril" id="bovril" />
+        <label for="bovril">Bovril</label>
+        <input
+          type="checkbox"
+          name="broccoli-cheddar-soup"
+          id="broccoli-cheddar-soup"
+        />
+        <label for="broccoli-cheddar-soup">Broccoli Cheddar Soup</label>
+        <input type="checkbox" name="chicken-broth" id="chicken-broth" />
+        <label for="chicken-broth">Chicken Broth</label>
+        <input type="checkbox" name="chicken-mushroom" id="chicken-mushroom" />
+        <label for="chicken-mushroom">Chicken Mushroom</label>
+        <input type="checkbox" name="chicken-noodle" id="chicken-noodle" />
+        <label for="chicken-noodle">Chicken Noodle</label>
+        <input type="checkbox" name="chicken-soup-mix" id="chicken-soup-mix" />
+        <label for="chicken-soup-mix">Chicken Soup Mix</label>
+        <input type="checkbox" name="chicken-stock" id="chicken-stock" />
+        <label for="chicken-stock">Chicken Stock</label>
+        <input type="checkbox" name="clam-chowder" id="clam-chowder" />
+        <label for="clam-chowder">Clam Chowder</label>
+        <input type="checkbox" name="clam-juice" id="clam-juice" />
+        <label for="clam-juice">Clam Juice</label>
+        <input type="checkbox" name="corn-chowder" id="corn-chowder" />
+        <label for="corn-chowder">Corn Chowder</label>
+        <input
+          type="checkbox"
+          name="cream-of-asparagus"
+          id="cream-of-asparagus"
+        />
+        <label for="cream-of-asparagus">Cream of Asparagus</label>
+        <input type="checkbox" name="cream-of-bacon" id="cream-of-bacon" />
+        <label for="cream-of-bacon">Cream of Bacon</label>
+        <input
+          type="checkbox"
+          name="cream-of-broccoli"
+          id="cream-of-broccoli"
+        />
+        <label for="cream-of-broccoli">Cream of Broccoli</label>
+        <input
+          type="checkbox"
+          name="cream-of-cauliflower"
+          id="cream-of-cauliflower"
+        />
+        <label for="cream-of-cauliflower">Cream of Cauliflower</label>
+        <input type="checkbox" name="cream-of-celery" id="cream-of-celery" />
+        <label for="cream-of-celery">Cream of Celery</label>
+        <input type="checkbox" name="cream-of-chicken" id="cream-of-chicken" />
+        <label for="cream-of-chicken">Cream of Chicken</label>
+        <input
+          type="checkbox"
+          name="cream-of-mushroom"
+          id="cream-of-mushroom"
+        />
+        <label for="cream-of-mushroom">Cream of Mushroom</label>
+        <input type="checkbox" name="cream-of-potato" id="cream-of-potato" />
+        <label for="cream-of-potato">Cream of Potato</label>
+        <input type="checkbox" name="green-pea-soup" id="green-pea-soup" />
+        <label for="green-pea-soup">Green Pea Soup</label>
+        <input type="checkbox" name="ham-stock" id="ham-stock" />
+        <label for="ham-stock">Ham Stock</label>
+        <input type="checkbox" name="lentil-soup" id="lentil-soup" />
+        <label for="lentil-soup">Lentil Soup</label>
+        <input type="checkbox" name="lobster-bisque" id="lobster-bisque" />
+        <label for="lobster-bisque">Lobster Bisque</label>
+        <input type="checkbox" name="minestrone" id="minestrone" />
+        <label for="minestrone">Minestrone</label>
+        <input type="checkbox" name="miso-soup" id="miso-soup" />
+        <label for="miso-soup">Miso Soup</label>
+        <input type="checkbox" name="onion-soup" id="onion-soup" />
+        <label for="onion-soup">Onion Soup</label>
+        <input type="checkbox" name="oxtail" id="oxtail" />
+        <label for="oxtail">Oxtail</label>
+        <input type="checkbox" name="pho" id="pho" />
+        <label for="pho">Pho</label>
+        <input type="checkbox" name="pork-bean-soup" id="pork-bean-soup" />
+        <label for="pork-bean-soup">Pork & Beans Soup</label>
+        <input type="checkbox" name="pork-broth" id="pork-broth" />
+        <label for="pork-broth">Pork Broth</label>
+        <input type="checkbox" name="pork-stock" id="pork-stock" />
+        <label for="pork-stock">Pork Stock</label>
+        <input type="checkbox" name="potato-soup-mix" id="potato-soup-mix" />
+        <label for="potato-soup-mix">Potato Soup Mix</label>
+        <input
+          type="checkbox"
+          name="ramen-noodle-soup"
+          id="ramen-noodle-soup"
+        />
+        <label for="ramen-noodle-soup">Ramen Noodle Soup</label>
+        <input type="checkbox" name="seafood-stock" id="seafood-stock" />
+        <label for="seafood-stock">Seafood Stock</label>
+        <input type="checkbox" name="split-pea" id="split-pea" />
+        <label for="split-pea">Split Pea</label>
+        <input type="checkbox" name="stock-paste" id="stock-paste" />
+        <label for="stock-paste">Stock Paste</label>
+        <input type="checkbox" name="tomato-bisque" id="tomato-bisque" />
+        <label for="tomato-bisque">Tomato Bisque</label>
+        <input
+          type="checkbox"
+          name="tomato-bisque-mix"
+          id="tomato-bisque-mix"
+        />
+        <label for="tomato-bisque-mix">Tomato Bisque Mix</label>
+        <input type="checkbox" name="tomato-soup" id="tomato-soup" />
+        <label for="tomato-soup">Tomato Soup</label>
+        <input type="checkbox" name="turkey-broth" id="turkey-broth" />
+        <label for="turkey-broth">Turkey Broth</label>
+        <input type="checkbox" name="turkey-stock" id="turkey-stock" />
+        <label for="turkey-stock">Turkey Stock</label>
+        <input type="checkbox" name="vegetable-broth" id="vegetable-broth" />
+        <label for="vegetable-broth">Vegetable Broth</label>
+        <input type="checkbox" name="vegetable-soup" id="vegetable-soup" />
+        <label for="vegetable-soup">Vegetable Soup</label>
+        <input
+          type="checkbox"
+          name="vegetable-soup-mix"
+          id="vegetable-soup-mix"
+        />
+        <label for="vegetable-soup-mix">Vegetable Soup Mix</label>
+        <input type="checkbox" name="vegetable-stock" id="vegetable-stock" />
+        <label for="vegetable-stock">Vegetable Stock</label>
       </fieldset>
       <hr />
       <fieldset class="recipe">
@@ -980,8 +2088,6 @@ export default () => html`
         <label for="aniseed">Aniseed</label>
         <input type="checkbox" name="apple-pie-spice" id="apple-pie-spice" />
         <label for="apple-pie-spice">Apple Pie Spice</label>
-        <input type="checkbox" name="asafoetida" id="asafoetida" />
-        <label for="asafoetida">Asafoetida</label>
         <input type="checkbox" name="au-jus-mix" id="au-jus-mix" />
         <label for="au-jus-mix">Au Jus Mix</label>
         <input
@@ -1016,8 +2122,6 @@ export default () => html`
         <label for="celery-powder">Celery Powder</label>
         <input type="checkbox" name="celery-seed" id="celery-seed" />
         <label for="celery-seed">Celery Seed</label>
-        <input type="checkbox" name="chervil" id="chervil" />
-        <label for="chervil">Chervil</label>
         <input
           type="checkbox"
           name="chicken-seasoning"
@@ -1194,8 +2298,6 @@ export default () => html`
         <label for="sage">Sage</label>
         <input type="checkbox" name="salt" id="salt" />
         <label for="salt">Salt</label>
-        <input type="checkbox" name="sambar-powder" id="sambar-powder" />
-        <label for="sambar-powder">Sambar Powder</label>
         <input
           type="checkbox"
           name="seafood-seasoning"
@@ -1234,8 +2336,6 @@ export default () => html`
         <label for="thai-seasoning">Thai Seasoning</label>
         <input type="checkbox" name="thyme" id="thyme" />
         <label for="thyme">Thyme</label>
-        <input type="checkbox" name="togorashi" id="togorashi" />
-        <label for="togorashi">Togorashi</label>
         <input type="checkbox" name="turmeric" id="turmeric" />
         <label for="turmeric">Turmeric</label>
         <input type="checkbox" name="wasabi-powder" id="wasabi-powder" />
@@ -1244,6 +2344,164 @@ export default () => html`
       <hr />
       <fieldset class="recipe">
         <legend>Supplements</legend>
+        <input type="checkbox" name="acai-powder" id="acai-powder" />
+        <label for="acai-powder">A&#231;ai Powder</label>
+        <input type="checkbox" name="almond-extract" id="almond-extract" />
+        <label for="almond-extract">Almond Extract</label>
+        <input type="checkbox" name="almond-protein" id="almond-protein" />
+        <label for="almond-protein">Almond Protein</label>
+        <input type="checkbox" name="ashwagandha" id="ashwagandha" />
+        <label for="ashwagandha">Ashwagandha</label>
+        <input type="checkbox" name="b-vitamins" id="b-vitamins" />
+        <label for="b-vitamins">B Vitamins</label>
+        <input type="checkbox" name="banana-extract" id="banana-extract" />
+        <label for="banana-extract">Banana Extract</label>
+        <input type="checkbox" name="berry-extract" id="berry-extract" />
+        <label for="berry-extract">Berry Extract</label>
+        <input
+          type="checkbox"
+          name="branched-chain-amino-acids"
+          id="branched-chain-amino-acids"
+        />
+        <label for="branched-chain-amino-acids"
+          >Branched-Chain Amino Acids &#40;BCAAs&#41;</label
+        >
+        <input type="checkbox" name="brewers-yeast" id="brewers-yeast" />
+        <label for="brewers-yeast">Brewer's Yeast</label>
+        <input type="checkbox" name="butter-extract" id="butter-extract" />
+        <label for="butter-extract">Butter Extract</label>
+        <input
+          type="checkbox"
+          name="butterscotch-extract"
+          id="butterscotch-extract"
+        />
+        <label for="butterscotch-extract">Butterscotch Extract</label>
+        <input type="checkbox" name="calcium-lactate" id="calcium-lactate" />
+        <label for="calcium-lactate">Calcium Lactate</label>
+        <input type="checkbox" name="cannabis" id="cannabis" />
+        <label for="cannabis">Cannabis</label>
+        <input type="checkbox" name="caramel-extract" id="caramel-extract" />
+        <label for="caramel-extract">Caramel Extract</label>
+        <input type="checkbox" name="casein" id="casein" />
+        <label for="casein">Casein</label>
+        <input type="checkbox" name="cbd-oil" id="cbd-oil" />
+        <label for="cbd-oil">CBD Oil</label>
+        <input type="checkbox" name="charcoal-powder" id="charcoal-powder" />
+        <label for="charcoal-powder">Charcoal Powder</label>
+        <input type="checkbox" name="cherry-extract" id="cherry-extract" />
+        <label for="cherry-extract">Cherry Extract</label>
+        <input
+          type="checkbox"
+          name="chocolate-extract"
+          id="chocolate-extract"
+        />
+        <label for="chocolate-extract">Chocolate Extract</label>
+        <input type="checkbox" name="cinnamon-extract" id="cinnamon-extract" />
+        <label for="cinnamon-extract">Cinnamon Extract</label>
+        <input type="checkbox" name="citric-acid" id="citric-acid" />
+        <label for="citric-acid">Citric Acid</label>
+        <input type="checkbox" name="coconut-extract" id="coconut-extract" />
+        <label for="coconut-extract">Coconut Extract</label>
+        <input type="checkbox" name="coffee-extract" id="coffee-extract" />
+        <label for="coffee-extract">Coffee Extract</label>
+        <input type="checkbox" name="collagen" id="collagen" />
+        <label for="collagen">Collagen</label>
+        <input type="checkbox" name="creatine" id="creatine" />
+        <label for="creatine">Creatine</label>
+        <input type="checkbox" name="egg-powder" id="egg-powder" />
+        <label for="egg-powder">Egg Powder</label>
+        <input type="checkbox" name="egg-white-powder" id="egg-white-powder" />
+        <label for="egg-white-powder">Egg White Powder</label>
+        <input type="checkbox" name="essential-oil" id="essential-oil" />
+        <label for="essential-oil">Essential Oil</label>
+        <input type="checkbox" name="fish-oil" id="fish-oil" />
+        <label for="fish-oil">Fish Oil</label>
+        <input type="checkbox" name="food-coloring" id="food-coloring" />
+        <label for="food-coloring">Food Coloring</label>
+        <input type="checkbox" name="glutamine" id="glutamine" />
+        <label for="glutamine">Glutamine</label>
+        <input type="checkbox" name="greens-powder" id="greens-powder" />
+        <label for="greens-powder">Greens Powder</label>
+        <input type="checkbox" name="hazelnut-extract" id="hazelnut-extract" />
+        <label for="hazelnut-extract">Hazelnut Extract</label>
+        <input type="checkbox" name="hemp-protein" id="hemp-protein" />
+        <label for="hemp-protein">Hemp Protein</label>
+        <input type="checkbox" name="lecithin" id="lecithin" />
+        <label for="lecithin">Lecithin</label>
+        <input type="checkbox" name="lemon-extract" id="lemon-extract" />
+        <label for="lemon-extract">Lemon Extract</label>
+        <input
+          type="checkbox"
+          name="lemon-juice-concentrate"
+          id="lemon-juice-concentrate"
+        />
+        <label for="lemon-juice-concentrate">Lemon Juice Concentrate</label>
+        <input
+          type="checkbox"
+          name="lime-juice-concentrate"
+          id="lime-juice-concentrate"
+        />
+        <label for="lime-juice-concentrate">Lime Juice Concentrate</label>
+        <input
+          type="checkbox"
+          name="liquid-egg-whites"
+          id="liquid-egg-whites"
+        />
+        <label for="liquid-egg-whites">Liquid Egg Whites</label>
+        <input type="checkbox" name="magnesium" id="magnesium" />
+        <label for="magnesium">Magnesium</label>
+        <input type="checkbox" name="malt-extract" id="malt-extract" />
+        <label for="malt-extract">Malt Extract</label>
+        <input type="checkbox" name="mass-gainer" id="mass-gainer" />
+        <label for="mass-gainer">Mass Gainer</label>
+        <input
+          type="checkbox"
+          name="nutritional-yeast"
+          id="nutritional-yeast"
+        />
+        <label for="nutritional-yeast">Nutritional Yeast</label>
+        <input type="checkbox" name="orange-extract" id="orange-extract" />
+        <label for="orange-extract">Orange Extract</label>
+        <input type="checkbox" name="pea-protein" id="pea-protein" />
+        <label for="pea-protein">Pea Protein</label>
+        <input
+          type="checkbox"
+          name="pineapple-extract"
+          id="pineapple-extract"
+        />
+        <label for="pineapple-extract">Pineapple Extract</label>
+        <input
+          type="checkbox"
+          name="powdered-peanut-butter"
+          id="powdered-peanut-butter"
+        />
+        <label for="powdered-peanut-butter">Powdered Peanut Butter</label>
+        <input type="checkbox" name="probiotics" id="probiotics" />
+        <label for="probiotics">Probiotics</label>
+        <input type="checkbox" name="rice-protein" id="rice-protein" />
+        <label for="rice-protein">Rice Protein</label>
+        <input type="checkbox" name="rock-salt" id="rock-salt" />
+        <label for="rock-salt">Rock Salt</label>
+        <input type="checkbox" name="rum-extract" id="rum-extract" />
+        <label for="rum-extract">Rum Extract</label>
+        <input type="checkbox" name="sodium-alginate" id="sodium-alginate" />
+        <label for="sodium-alginate">Sodium Alginate</label>
+        <input type="checkbox" name="soy-protein" id="soy-protein" />
+        <label for="soy-protein">Soy Protein</label>
+        <input type="checkbox" name="spirulina" id="spirulina" />
+        <label for="spirulina">Spirulina</label>
+        <input type="checkbox" name="thc" id="thc" />
+        <label for="thc">THC</label>
+        <input type="checkbox" name="vitamin-a" id="vitamin-a" />
+        <label for="vitamin-a">Vitamin A</label>
+        <input type="checkbox" name="vitamin-c" id="vitamin-c" />
+        <label for="vitamin-c">Vitamin C</label>
+        <input type="checkbox" name="vitamin-d" id="vitamin-d" />
+        <label for="vitamin-d">Vitamin D</label>
+        <input type="checkbox" name="vitamin-e" id="vitamin-e" />
+        <label for="vitamin-e">Vitamin E</label>
+        <input type="checkbox" name="whey-protein" id="whey-protein" />
+        <label for="whey-protein">Whey Protein</label>
       </fieldset>
       <hr />
       <fieldset class="recipe">
@@ -1280,8 +2538,6 @@ export default () => html`
         <label for="honey">Honey</label>
         <input type="checkbox" name="inulin" id="inulin" />
         <label for="inulin">Inulin</label>
-        <input type="checkbox" name="jaggery" id="jaggery" />
-        <label for="jaggery">Jaggery</label>
         <input type="checkbox" name="lucuma-powder" id="lucuma-powder" />
         <label for="lucuma-powder">Lucuma Powder</label>
         <input type="checkbox" name="maple-syrup" id="maple-syrup" />
@@ -1366,8 +2622,6 @@ export default () => html`
         <label for="carrot">Carrot</label>
         <input type="checkbox" name="cauliflower" id="cauliflower" />
         <label for="cauliflower">Cauliflower</label>
-        <input type="checkbox" name="celeriac" id="celeriac" />
-        <label for="celeriac">Celeriac</label>
         <input type="checkbox" name="celery" id="celery" />
         <label for="celery">Celery</label>
         <input type="checkbox" name="chard" id="chard" />
@@ -1414,8 +2668,6 @@ export default () => html`
         <label for="habanero">Haba&#241;ero</label>
         <input type="checkbox" name="horseradish" id="horseradish" />
         <label for="horseradish">Horseradish</label>
-        <input type="checkbox" name="huitlacoche" id="huitlacoche" />
-        <label for="huitlacoche">Huitlacoche</label>
         <input type="checkbox" name="iceberg-lettuce" id="iceberg-lettuce" />
         <label for="iceberg-lettuce">Iceberg Lettuce</label>
         <input type="checkbox" name="jalapeno" id="jalapeno" />
@@ -1546,9 +2798,11 @@ export default () => html`
         <label for="watercress">Watercress</label>
         <input type="checkbox" name="yam" id="yam" />
         <label for="yam">Yam</label>
-        <input type="checkbox" name="Zucchini" id="Zucchini" />
-        <label for="Zucchini">Zucchini</label>
+        <input type="checkbox" name="zucchini" id="zucchini" />
+        <label for="zucchini">Zucchini</label>
       </fieldset>
+      <hr />
+      <input type="submit" name="submit" id="btn" value="Find Recipes" />
     </form>
   </main>
 `;
