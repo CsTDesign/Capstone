@@ -1047,136 +1047,6 @@ export default () => html`
       </fieldset>
       <hr />
       <fieldset class="recipe">
-        <legend>Drinks</legend>
-        <input type="checkbox" name="acai-juice" id="acai-juice" />
-        <label for="acai-juice">A&#231;ai Juice</label>
-        <input type="checkbox" name="apple-cider" id="apple-cider" />
-        <label for="apple-cider">Apple Cider</label>
-        <input type="checkbox" name="apple-juice" id="apple-juice" />
-        <label for="apple-juice">Apple Juice</label>
-        <input type="checkbox" name="banana-juice" id="banana-juice" />
-        <label for="banana-juice">Banana Juice</label>
-        <input type="checkbox" name="beet-juice" id="beet-juice" />
-        <label for="beet-juice">Beet Juice</label>
-        <input
-          type="checkbox"
-          name="blackcurrant-juice"
-          id="blackcurrant-juice"
-        />
-        <label for="blackcurrant-juice">Blackcurrant Juice</label>
-        <input type="checkbox" name="carrot-juice" id="carrot-juice" />
-        <label for="carrot-juice">Carrot Juice</label>
-        <input type="checkbox" name="chai-tea" id="chai-tea" />
-        <label for="chai-tea">Chai Tea</label>
-        <input type="checkbox" name="chamomile" id="chamomile" />
-        <label for="chamomile">Chamomile</label>
-        <input type="checkbox" name="cherry-juice" id="cherry-juice" />
-        <label for="cherry-juice">Cherry Juice</label>
-        <input type="checkbox" name="cherry-soda" id="cherry-soda" />
-        <label for="cherry-soda">Cherry Soda</label>
-        <input type="checkbox" name="chocolate-drink" id="chocolate-drink" />
-        <label for="chocolate-drink">Chocolate Drink</label>
-        <input type="checkbox" name="club-soda" id="club-soda" />
-        <label for="club-soda">Club Soda</label>
-        <input type="checkbox" name="coconut-water" id="coconut-water" />
-        <label for="coconut-water">Coconut Water</label>
-        <input type="checkbox" name="coffee" id="coffee" />
-        <label for="coffee">Coffee</label>
-        <input type="checkbox" name="cola" id="cola" />
-        <label for="cola">Cola</label>
-        <input type="checkbox" name="cranberry-juice" id="cranberry-juice" />
-        <label for="cranberry-juice">Cranberry Juice</label>
-        <input type="checkbox" name="cream-of-coconut" id="cream-of-coconut" />
-        <label for="cream-of-coconut">Cream of Coconut</label>
-        <input type="checkbox" name="cream-soda" id="cream-soda" />
-        <label for="cream-soda">Cream Soda</label>
-        <input type="checkbox" name="dr-pepper" id="dr-pepper" />
-        <label for="dr-pepper">Dr. Pepper</label>
-        <input type="checkbox" name="eggnog" id="eggnog" />
-        <label for="eggnog">Eggnog</label>
-        <input type="checkbox" name="energy-drink" id="energy-drink" />
-        <label for="energy-drink">Energy Drink</label>
-        <input type="checkbox" name="espresso" id="espresso" />
-        <label for="espresso">Espresso</label>
-        <input type="checkbox" name="fruit-punch" id="fruit-punch" />
-        <label for="fruit-punch">Fruit Punch</label>
-        <input type="checkbox" name="ginger-ale" id="ginger-ale" />
-        <label for="ginger-ale">Ginger Ale</label>
-        <input type="checkbox" name="ginger-beer" id="ginger-beer" />
-        <label for="ginger-beer">Ginger Beer</label>
-        <input type="checkbox" name="grape-juice" id="grape-juice" />
-        <label for="grape-juice">Grape Juice</label>
-        <input type="checkbox" name="grape-soda" id="grape-soda" />
-        <label for="grape-soda">Grape Soda</label>
-        <input type="checkbox" name="grapefruit-juice" id="grapefruit-juice" />
-        <label for="grapefruit-juice">Grapefruit Juice</label>
-        <input type="checkbox" name="grapefruit-soda" id="grapefruit-soda" />
-        <label for="grapefruit-soda">Grapefruit Soda</label>
-        <input type="checkbox" name="green-tea" id="green-tea" />
-        <label for="green-tea">Green Tea</label>
-        <input type="checkbox" name="guava-juice" id="guava-juice" />
-        <label for="guava-juice">Guava Juice</label>
-        <input type="checkbox" name="herbal-tea" id="herbal-tea" />
-        <label for="herbal-tea">Herbal Tea</label>
-        <input type="checkbox" name="hibiscus-tea" id="hibiscus-tea" />
-        <label for="hibiscus-tea">Hibiscus Tea</label>
-        <input type="checkbox" name="kombucha" id="kombucha" />
-        <label for="kombucha">Kombucha</label>
-        <input type="checkbox" name="kool-aid" id="kool-aid" />
-        <label for="kool-aid">Kool-Aid</label>
-        <input type="checkbox" name="lemon-lime-soda" id="lemon-lime-soda" />
-        <label for="lemon-lime-soda">Lemon-Lime Soda</label>
-        <input type="checkbox" name="lemon-water" id="lemon-water" />
-        <label for="lemon-water">Lemon Water</label>
-        <input type="checkbox" name="lemonade" id="lemonade" />
-        <label for="lemonade">Lemonade</label>
-        <input type="checkbox" name="lemonade-mix" id="lemonade-mix" />
-        <label for="lemonade-mix">Lemonade Mix</label>
-        <input
-          type="checkbox"
-          name="malted-milk-powder"
-          id="malted-milk-powder"
-        />
-        <label for="malted-milk-powder"
-          >Malted Milk Powder &#40;Ovaltine&#41;</label
-        >
-        <input type="checkbox" name="orange-juice" id="orange-juice" />
-        <label for="orange-juice">Orange Juice</label>
-        <input type="checkbox" name="orange-soda" id="orange-soda" />
-        <label for="orange-soda">Orange Soda</label>
-        <input
-          type="checkbox"
-          name="passion-fruit-juice"
-          id="passion-fruit-juice"
-        />
-        <label for="passion-fruit-juice">Passion Fruit Juice</label>
-        <input type="checkbox" name="pineapple-juice" id="pineapple-juice" />
-        <label for="pineapple-juice">Pineapple Juice</label>
-        <input
-          type="checkbox"
-          name="pomegranate-juice"
-          id="pomegranate-juice"
-        />
-        <label for="pomegranate-juice">Pomegranate Juice</label>
-        <input type="checkbox" name="prune-juice" id="prune-juice" />
-        <label for="prune-juice">Prune Juice</label>
-        <input type="checkbox" name="root-beer" id="root-beer" />
-        <label for="root-beer">Root Beer</label>
-        <input type="checkbox" name="sparkling-water" id="sparkling-water" />
-        <label for="sparkling-water">Sparkling Water</label>
-        <input type="checkbox" name="sports-drink" id="sports-drink" />
-        <label for="sports-drink">Sports Drink</label>
-        <input type="checkbox" name="strawberry-juice" id="strawberry-juice" />
-        <label for="strawberry-juice">Strawberry Juice</label>
-        <input type="checkbox" name="strawberry-soda" id="strawberry-soda" />
-        <label for="strawberry-soda">Strawberry Soda</label>
-        <input type="checkbox" name="tomato-juice" id="tomato-juice" />
-        <label for="tomato-juice">Tomato Juice</label>
-        <input type="checkbox" name="tonic-water" id="tonic-water" />
-        <label for="tonic-water">Tonic Water</label>
-      </fieldset>
-      <hr />
-      <fieldset class="recipe">
         <legend>Dressing & Vinegar</legend>
         <input type="checkbox" name="aioli" id="aioli" />
         <label for="aioli">Aioli</label>
@@ -1304,6 +1174,136 @@ export default () => html`
           id="white-wine-vinegar"
         />
         <label for="white-wine-vinegar">White Wine Vinegar</label>
+      </fieldset>
+      <hr />
+      <fieldset class="recipe">
+        <legend>Drinks</legend>
+        <input type="checkbox" name="acai-juice" id="acai-juice" />
+        <label for="acai-juice">A&#231;ai Juice</label>
+        <input type="checkbox" name="apple-cider" id="apple-cider" />
+        <label for="apple-cider">Apple Cider</label>
+        <input type="checkbox" name="apple-juice" id="apple-juice" />
+        <label for="apple-juice">Apple Juice</label>
+        <input type="checkbox" name="banana-juice" id="banana-juice" />
+        <label for="banana-juice">Banana Juice</label>
+        <input type="checkbox" name="beet-juice" id="beet-juice" />
+        <label for="beet-juice">Beet Juice</label>
+        <input
+          type="checkbox"
+          name="blackcurrant-juice"
+          id="blackcurrant-juice"
+        />
+        <label for="blackcurrant-juice">Blackcurrant Juice</label>
+        <input type="checkbox" name="carrot-juice" id="carrot-juice" />
+        <label for="carrot-juice">Carrot Juice</label>
+        <input type="checkbox" name="chai-tea" id="chai-tea" />
+        <label for="chai-tea">Chai Tea</label>
+        <input type="checkbox" name="chamomile" id="chamomile" />
+        <label for="chamomile">Chamomile</label>
+        <input type="checkbox" name="cherry-juice" id="cherry-juice" />
+        <label for="cherry-juice">Cherry Juice</label>
+        <input type="checkbox" name="cherry-soda" id="cherry-soda" />
+        <label for="cherry-soda">Cherry Soda</label>
+        <input type="checkbox" name="chocolate-drink" id="chocolate-drink" />
+        <label for="chocolate-drink">Chocolate Drink</label>
+        <input type="checkbox" name="club-soda" id="club-soda" />
+        <label for="club-soda">Club Soda</label>
+        <input type="checkbox" name="coconut-water" id="coconut-water" />
+        <label for="coconut-water">Coconut Water</label>
+        <input type="checkbox" name="coffee" id="coffee" />
+        <label for="coffee">Coffee</label>
+        <input type="checkbox" name="cola" id="cola" />
+        <label for="cola">Cola</label>
+        <input type="checkbox" name="cranberry-juice" id="cranberry-juice" />
+        <label for="cranberry-juice">Cranberry Juice</label>
+        <input type="checkbox" name="cream-of-coconut" id="cream-of-coconut" />
+        <label for="cream-of-coconut">Cream of Coconut</label>
+        <input type="checkbox" name="cream-soda" id="cream-soda" />
+        <label for="cream-soda">Cream Soda</label>
+        <input type="checkbox" name="dr-pepper" id="dr-pepper" />
+        <label for="dr-pepper">Dr. Pepper</label>
+        <input type="checkbox" name="eggnog" id="eggnog" />
+        <label for="eggnog">Eggnog</label>
+        <input type="checkbox" name="energy-drink" id="energy-drink" />
+        <label for="energy-drink">Energy Drink</label>
+        <input type="checkbox" name="espresso" id="espresso" />
+        <label for="espresso">Espresso</label>
+        <input type="checkbox" name="fruit-punch" id="fruit-punch" />
+        <label for="fruit-punch">Fruit Punch</label>
+        <input type="checkbox" name="ginger-ale" id="ginger-ale" />
+        <label for="ginger-ale">Ginger Ale</label>
+        <input type="checkbox" name="ginger-beer" id="ginger-beer" />
+        <label for="ginger-beer">Ginger Beer</label>
+        <input type="checkbox" name="grape-juice" id="grape-juice" />
+        <label for="grape-juice">Grape Juice</label>
+        <input type="checkbox" name="grape-soda" id="grape-soda" />
+        <label for="grape-soda">Grape Soda</label>
+        <input type="checkbox" name="grapefruit-juice" id="grapefruit-juice" />
+        <label for="grapefruit-juice">Grapefruit Juice</label>
+        <input type="checkbox" name="grapefruit-soda" id="grapefruit-soda" />
+        <label for="grapefruit-soda">Grapefruit Soda</label>
+        <input type="checkbox" name="green-tea" id="green-tea" />
+        <label for="green-tea">Green Tea</label>
+        <input type="checkbox" name="guava-juice" id="guava-juice" />
+        <label for="guava-juice">Guava Juice</label>
+        <input type="checkbox" name="herbal-tea" id="herbal-tea" />
+        <label for="herbal-tea">Herbal Tea</label>
+        <input type="checkbox" name="hibiscus-tea" id="hibiscus-tea" />
+        <label for="hibiscus-tea">Hibiscus Tea</label>
+        <input type="checkbox" name="kombucha" id="kombucha" />
+        <label for="kombucha">Kombucha</label>
+        <input type="checkbox" name="kool-aid" id="kool-aid" />
+        <label for="kool-aid">Kool-Aid</label>
+        <input type="checkbox" name="lemon-lime-soda" id="lemon-lime-soda" />
+        <label for="lemon-lime-soda">Lemon-Lime Soda</label>
+        <input type="checkbox" name="lemon-water" id="lemon-water" />
+        <label for="lemon-water">Lemon Water</label>
+        <input type="checkbox" name="lemonade" id="lemonade" />
+        <label for="lemonade">Lemonade</label>
+        <input type="checkbox" name="lemonade-mix" id="lemonade-mix" />
+        <label for="lemonade-mix">Lemonade Mix</label>
+        <input
+          type="checkbox"
+          name="malted-milk-powder"
+          id="malted-milk-powder"
+        />
+        <label for="malted-milk-powder"
+          >Malted Milk Powder &#40;Ovaltine&#41;</label
+        >
+        <input type="checkbox" name="orange-juice" id="orange-juice" />
+        <label for="orange-juice">Orange Juice</label>
+        <input type="checkbox" name="orange-soda" id="orange-soda" />
+        <label for="orange-soda">Orange Soda</label>
+        <input
+          type="checkbox"
+          name="passion-fruit-juice"
+          id="passion-fruit-juice"
+        />
+        <label for="passion-fruit-juice">Passion Fruit Juice</label>
+        <input type="checkbox" name="pineapple-juice" id="pineapple-juice" />
+        <label for="pineapple-juice">Pineapple Juice</label>
+        <input
+          type="checkbox"
+          name="pomegranate-juice"
+          id="pomegranate-juice"
+        />
+        <label for="pomegranate-juice">Pomegranate Juice</label>
+        <input type="checkbox" name="prune-juice" id="prune-juice" />
+        <label for="prune-juice">Prune Juice</label>
+        <input type="checkbox" name="root-beer" id="root-beer" />
+        <label for="root-beer">Root Beer</label>
+        <input type="checkbox" name="sparkling-water" id="sparkling-water" />
+        <label for="sparkling-water">Sparkling Water</label>
+        <input type="checkbox" name="sports-drink" id="sports-drink" />
+        <label for="sports-drink">Sports Drink</label>
+        <input type="checkbox" name="strawberry-juice" id="strawberry-juice" />
+        <label for="strawberry-juice">Strawberry Juice</label>
+        <input type="checkbox" name="strawberry-soda" id="strawberry-soda" />
+        <label for="strawberry-soda">Strawberry Soda</label>
+        <input type="checkbox" name="tomato-juice" id="tomato-juice" />
+        <label for="tomato-juice">Tomato Juice</label>
+        <input type="checkbox" name="tonic-water" id="tonic-water" />
+        <label for="tonic-water">Tonic Water</label>
       </fieldset>
       <hr />
       <fieldset class="recipe">
