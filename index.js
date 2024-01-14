@@ -35,7 +35,7 @@ function afterRender(state) {
       const ingredients = [];
 
       // Iterate over ingredients selected
-      for (let ingredient of ingredientList.ingredients) {
+      for (let ingredient of ingredientList) {
         if (ingredient.checked) {
           ingredients.push(ingredient.value);
         }
@@ -43,7 +43,7 @@ function afterRender(state) {
 
       // Create request body object to send to Spoonacular API
       const requestData = {
-        dietaryPreference: ingredientList.dietaryPreference.value,
+        diet: ingredientList.diet.value,
         alcohol: ingredientList.alcohol.value,
         bakingNeeds: ingredientList.bakingNeeds.value,
         bread: ingredientList.bread.value,

@@ -106,7 +106,7 @@ export default () => html`
     </article>
     <p>
       To maintain his weight at this activity level, he must consume nearly 3500
-      calories per day. If he wanted to lose weight
+      calories per day.
     </p>
     <h3>Calories</h3>
     <p>
@@ -128,8 +128,8 @@ export default () => html`
     <p>
       Calories represent how much energy a serving of food contains. A typical
       diet is 2000 calories per day, but individual calorie needs vary. Your
-      calories should ideally come from a mix of macronutrients &#40;fats,
-      carbohydrates, and proteins&#41;.
+      calories should ideally come from a proper mix of macronutrients
+      &#40;fats, carbohydrates, and proteins&#41;.
     </p>
     <p>
       Each macronutrient &#40;macro&#41; has a calorie value per gram, and each
@@ -168,7 +168,7 @@ export default () => html`
       <p>720 + 648 = 1368 total fat and protein calories</p>
     </article>
     <p>
-      Carbohydrates &#40;Carbs&#41; provide quick energy, usually in the form of
+      Carbohydrates &#40;carbs&#41; provide quick energy, usually in the form of
       fiber, sugar, or starch. After adding the fat and protein calories
       together, we can then subtract that number from total daily calories to
       determine how many calories should come from carbohydrates:
@@ -178,7 +178,7 @@ export default () => html`
     </article>
     <p>Divide this number by 4 to find your daily intake of carbohydrates:</p>
     <article class="measurement">
-      <p>2128 ÷ 4 = 532g carbohydrates</p>
+      <p>2128 &#247; 4 = 532g carbohydrates</p>
     </article>
     <p>
       In order for our example person to maintain his weight, here is his macro
@@ -207,12 +207,13 @@ export default () => html`
       eat.
     </p>
     <p>
-      Above all, please remember that it takes time and patience to lose weight
-      or gain muscle. If your goal is to lose weight, you should aim to lose 1-2
+      Above all, please remember that losing weight or gaining muscle takes time
+      and patience. If you're trying to lose weight, you should aim to lose 1-2
       pounds per week. On the other hand, if you're building muscle, you should
       strive to gain 1 pound per month. Those rates may seem too small to notice
-      any change, but please do not let them discourage you. These numbers are a
-      healthy average.
+      any change, but these numbers are a healthy average. Please do not let
+      those numbers discourage you. With time, patience, and determination, you
+      can hit your goals, and then some.
     </p>
   </main>
 `;
