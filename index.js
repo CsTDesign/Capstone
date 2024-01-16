@@ -28,55 +28,58 @@ function afterRender(state) {
       event.preventDefault();
 
       // Get the form element
-      const ingredientList = event.target.elements;
-      console.log("Input Element List", ingredientList);
+      const inputList = event.target.elements;
+      console.log("Input Element List", inputList);
 
       // Create empty array to hold ingredients selected
       const ingredients = [];
 
       // Iterate over ingredients selected
-      for (let ingredient of ingredientList) {
-        if (ingredient.checked) {
-          ingredients.push(ingredient.value);
+      for (let input of inputList) {
+        if (input.checked) {
+          ingredients.push(input.value);
         }
       }
-
+      console.log("Ingredients", ingredients);
       // Create request body object to send to Spoonacular API
-      const requestData = {
-        diet: ingredientList.diet.value,
-        alcohol: ingredientList.alcohol.value,
-        bakingNeeds: ingredientList.bakingNeeds.value,
-        bread: ingredientList.bread.value,
-        cannedItems: ingredientList.cannedItems.value,
-        condiments: ingredientList.condiments.value,
-        cookingOil: ingredientList.cookingOil.value,
-        dairy: ingredientList.dairy.value,
-        dessert: ingredientList.dessert.value,
-        dressing: ingredientList.dressing.value,
-        drinks: ingredientList.drinks.value,
-        fruit: ingredientList.fruit.value,
-        grains: ingredientList.grains.value,
-        meat: ingredientList.meat.value,
-        nuts: ingredientList.nuts.value,
-        saltyFoods: ingredientList.saltyFoods.value,
-        seafood: ingredientList.seafood.value,
-        seeds: ingredientList.seeds.value,
-        soup: ingredientList.soup.value,
-        spices: ingredientList.spices.value,
-        supplements: ingredientList.supplements.value,
-        sweeteners: ingredientList.sweeteners.value,
-        vegetables: ingredientList.vegetables.value
-      };
+      // const requestData = {
+      //   diet: inputList.diet[0].value,
+      //   alcohol: inputList.alcohol[0].value,
+      //   bakingNeeds: inputList.bakingNeeds[0].value,
+      //   bread: inputList.bread[0].value,
+      //   cannedItems: inputList.cannedItems[0].value,
+      //   condiments: inputList.condiments[0].value,
+      //   cookingOil: inputList.cookingOil[0].value,
+      //   dairy: inputList.dairy[0].value,
+      //   dessert: inputList.dessert[0].value,
+      //   dressing: inputList.dressing[0].value,
+      //   drinks: inputList.drinks[0].value,
+      //   fruit: inputList.fruit[0].value,
+      //   grains: inputList.grains[0].value,
+      //   meat: inputList.meat[0].value,
+      //   nuts: inputList.nuts[0].value,
+      //   saltyFoods: inputList.saltyFoods[0].value,
+      //   seafood: inputList.seafood[0].value,
+      //   seeds: inputList.seeds[0].value,
+      //   soup: inputList.soup[0].value,
+      //   spices: inputList.spices[0].value,
+      //   supplements: inputList.supplements[0].value,
+      //   sweeteners: inputList.sweeteners[0].value,
+      //   vegetables: inputList.vegetables[0].value
+      // };
       // Log request body to console
-      console.log("Request Body", requestData);
+      // console.log("Request Body", requestData);
 
       axios
-        // Make a POST request to the API to create a new recipe
-        .post(`${process.env.SPOONACULAR_API_URL}/recipes`, requestData)
+        // Make a POST request to the API to  a new recipe
+        .get(
+          `${process.env.SPOONACULAR_API_URL}?apiKey=${process.env.SPOONACULAR_API_KEY}&ingredients=${ingredients}`
+        )
         .then(response => {
           //  Then push the new recipe onto the Recipe state recipes attribute, so it can be displayed in the recipe list
-          store.Recipe.recipes.push(response.data);
-          router.navigate("/Recipe");
+          console.log("data", response.data);
+          store.Recipes.recipes.push(response.data);
+          router.navigate("/Recipes");
         })
         // If there is an error log it to the console
         .catch(error => {
@@ -118,21 +121,7 @@ router.hooks({
           });
         break;
       // Add a case for each view that needs data from an API
-      case "Recipe":
-        // New Axios get request utilizing already made environment variable
-        axios
-          .get(`${process.env.SPOONACULAR_API_URL}/recipes`)
-          .then(response => {
-            // We need to store the response to the state, in the next step but in the meantime let's see what it looks like so that we know what to store from the response.
-            console.log("response", response.data);
-            store.Recipe.recipes = response.data;
-            done();
-          })
-          .catch(error => {
-            console.log("It puked", error);
-            done();
-          });
-        break;
+
       default:
         done();
     }

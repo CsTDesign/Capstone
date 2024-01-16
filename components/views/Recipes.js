@@ -1,5 +1,5 @@
 import html from "html-literal";
-export default () => html`
+export default state => html`
   <main>
     <h2>RECIPE FINDER</h2>
     <p>
@@ -7,9 +7,13 @@ export default () => html`
       delicious meal prep recipes easier.
     </p>
     <hr />
-    <form id="recipe-form" action="https://api.spoonacular.com/recipes/findByIngredients" method="get">
+    <form
+      id="recipe-form"
+      action="https://api.spoonacular.com/recipes/findByIngredients"
+      method="get"
+    >
       <fieldset class="recipe">
-        <legend>Dietary Preferences</legend>
+        <legend>Diet</legend>
         <input
           type="checkbox"
           name="gluten-free"
@@ -4743,13 +4747,6 @@ export default () => html`
         <label for="fajita-seasoning">Fajita Seasoning</label>
         <input
           type="checkbox"
-          name="fennel-seed"
-          id="fennel-seed"
-          value="Fennel Seed"
-        />
-        <label for="fennel-seed">Fennel Seed</label>
-        <input
-          type="checkbox"
           name="fenugreek"
           id="fenugreek"
           value="Fenugreek"
@@ -5425,6 +5422,13 @@ export default () => html`
           value="Probiotics"
         />
         <label for="probiotics">Probiotics</label>
+        <input
+          type="checkbox"
+          name="protein-shake"
+          id="protein-shake"
+          value="Protein Shake"
+        />
+        <label for="protein-shake">Protein Shake</label>
         <input
           type="checkbox"
           name="rice-protein"
@@ -6424,7 +6428,18 @@ export default () => html`
         <label for="zucchini">Zucchini</label>
       </fieldset>
       <hr />
-      <input type="submit" name="submit" id="btn" value="Find Recipes" />
+      <input
+        type="submit"
+        name="submit"
+        id="btn"
+        onclick=""
+        value="Find Recipes"
+      />
     </form>
+    ${state.recipes
+      .map(recipe => {
+        return `<img src="${recipe.image}"><p>${recipe.title}</p>`;
+      })
+      .join("")}
   </main>
 `;

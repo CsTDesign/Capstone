@@ -72,7 +72,7 @@ router.put("/:id", async (request, response) => {
       request.params.id,
       {
         $set: {
-          dietaryPreference: body.dietaryPreference,
+          diet: body.diet,
           alcohol: body.alcohol,
           bakingNeeds: body.bakingNeeds,
           bread: body.bread,
