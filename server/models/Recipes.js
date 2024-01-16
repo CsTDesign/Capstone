@@ -1,10 +1,7 @@
 import mongoose from "mongoose";
 
 const recipeSchema = new mongoose.Schema({
-  dietaryPreference: {
-    type: [String],
-    required: true
-  },
+  dietaryPreference: [String],
   alcohol: [String],
   bakingNeeds: [String],
   bread: [String],
