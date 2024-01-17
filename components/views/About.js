@@ -14,6 +14,10 @@ export default () => html`
       CSS, and JavaScript before, this cohort not only helped me learn new ideas
       but also helped me to pursue a career within this field.
     </p>
-    <p>Any questions? Please network</p>
+    <p>
+      Any questions? Please feel free to network with me on
+      <a href="https://github.com/CsTDesign">GitHub</a> or
+      <a href="https://www.linkedin.com/in/cory-taylor-010b24103/">LinkedIn</a>.
+    </p>
   </main>
 `;
