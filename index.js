@@ -41,34 +41,6 @@ function afterRender(state) {
         }
       }
       console.log("Ingredients", ingredients);
-      // Create request body object to send to Spoonacular API
-      // const requestData = {
-      //   diet: inputList.diet[0].value,
-      //   alcohol: inputList.alcohol[0].value,
-      //   bakingNeeds: inputList.bakingNeeds[0].value,
-      //   bread: inputList.bread[0].value,
-      //   cannedItems: inputList.cannedItems[0].value,
-      //   condiments: inputList.condiments[0].value,
-      //   cookingOil: inputList.cookingOil[0].value,
-      //   dairy: inputList.dairy[0].value,
-      //   dessert: inputList.dessert[0].value,
-      //   dressing: inputList.dressing[0].value,
-      //   drinks: inputList.drinks[0].value,
-      //   fruit: inputList.fruit[0].value,
-      //   grains: inputList.grains[0].value,
-      //   meat: inputList.meat[0].value,
-      //   nuts: inputList.nuts[0].value,
-      //   saltyFoods: inputList.saltyFoods[0].value,
-      //   seafood: inputList.seafood[0].value,
-      //   seeds: inputList.seeds[0].value,
-      //   soup: inputList.soup[0].value,
-      //   spices: inputList.spices[0].value,
-      //   supplements: inputList.supplements[0].value,
-      //   sweeteners: inputList.sweeteners[0].value,
-      //   vegetables: inputList.vegetables[0].value
-      // };
-      // Log request body to console
-      // console.log("Request Body", requestData);
 
       axios
         // Make a POST request to the API to  a new recipe
@@ -78,8 +50,44 @@ function afterRender(state) {
         .then(response => {
           //  Then push the new recipe onto the Recipe state recipes attribute, so it can be displayed in the recipe list
           console.log("data", response.data);
-          store.Recipes.recipes.push(response.data);
+          for (let item of response.data) {
+            store.Recipes.recipes.push(item);
+          }
+          // store.Recipes.recipes.push(response.data);
           router.navigate("/Recipes");
+        })
+        // If there is an error log it to the console
+        .catch(error => {
+          console.log("It puked", error);
+        });
+    });
+  }
+
+  if (state.view === "Contact") {
+    document.querySelector("#fs-frm").addEventListener("submit", event => {
+      event.preventDefault();
+
+      // Get the form element
+      const emailInputList = event.target.elements;
+      console.log("Input Email Element List", emailInputList);
+
+      // Create a request body object to send to Formspree
+      const requestData = {
+        fullName: emailInputList.fullName.name,
+        emailAddress: emailInputList.emailAddress.name,
+        message: emailInputList.message.name
+      };
+
+      // Log the request body to the console
+      console.log("request Body", requestData);
+
+      axios
+        // Make a POST request to the API to create a new contact
+        .post(`${process.env.PIZZA_PLACE_API_URL}/contacts`, requestData)
+        .then(response => {
+          // Then push the new contact onto the Contact state contacts attribute, so it can be displayed in the contact list
+          store.Contact.contacts.push(response.data);
+          router.navigate("/Contact");
         })
         // If there is an error log it to the console
         .catch(error => {

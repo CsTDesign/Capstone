@@ -11,31 +11,25 @@ export default () => html`
       id="fs-frm"
       name="simple-contact-form"
       accept-charset="utf-8"
-      action="https://formspree.io/f/{form_id}"
+      action=""
       method="post"
     >
       <fieldset id="fs-frm-inputs">
-        <label for="full-name">Full Name</label>
+        <label for="fullName">Full Name</label>
         <input
           type="text"
           name="name"
-          id="full-name"
+          id="fullName"
           placeholder="First and Last"
           required=""
           data-nlok-ref-guid="c08e98eb-04a5-4f04-eeac-6ea083a8a6d4"
           autocomplete="off"
         />
-        <div id="norton-idsafe-field-styling-divId">
-          <img
-            id="norton-idsafe-field-logo-imgId"
-            src="chrome-extension://lcccdlklhahfmobgpnilndimkankpnkg/images/npw-badge-icon-locked.svg"
-          />
-        </div>
-        <label for="email-address">Email Address</label>
+        <label for="emailAddress">Email Address</label>
         <input
           type="email"
           name="_replyto"
-          id="email-address"
+          id="emailAddress"
           placeholder="email@email.com"
           required=""
         />
