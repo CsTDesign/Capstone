@@ -1,4 +1,5 @@
 export default {
   header: "iMealPrep",
-  view: "Contact"
+  view: "Contact",
+  contacts: []
 };

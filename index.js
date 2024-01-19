@@ -73,9 +73,9 @@ function afterRender(state) {
 
       // Create a request body object to send to Formspree
       const requestData = {
-        fullName: emailInputList.fullName.name,
-        emailAddress: emailInputList.emailAddress.name,
-        message: emailInputList.message.name
+        fullName: emailInputList.fullName.value,
+        emailAddress: emailInputList.emailAddress.value,
+        message: emailInputList.message.value
       };
 
       // Log the request body to the console
@@ -83,7 +83,7 @@ function afterRender(state) {
 
       axios
         // Make a POST request to the API to create a new contact
-        .post(`${process.env.PIZZA_PLACE_API_URL}/contacts`, requestData)
+        .post(`${process.env.FORMSPREE_API_URL}/contacts`, requestData)
         .then(response => {
           // Then push the new contact onto the Contact state contacts attribute, so it can be displayed in the contact list
           store.Contact.contacts.push(response.data);
