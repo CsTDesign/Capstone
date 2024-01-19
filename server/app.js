@@ -1,7 +1,7 @@
 import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
-import recipes from "./routers/recipes.js";
+import contacts from "./routers/contacts.js";
 
 // Load environment variables from .env file
 dotenv.config();
@@ -49,12 +49,13 @@ const cors = (req, res, next) => {
 };
 app.use(cors);
 app.use(express.json());
-app.use("/recipes", recipes);
-
+app.use(logging);
 // Request handlers go here
 app.get("/status", (request, response) => {
   response.status(200).json({ message: "Service healthy" });
 });
+
+app.use("/contacts", contacts);
 
 // Handle the request with HTTP GET method with query parameters and a url parameter
 // app.get("/weather/:city", (request, response) => {
