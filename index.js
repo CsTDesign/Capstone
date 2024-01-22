@@ -83,7 +83,7 @@ function afterRender(state) {
 
       axios
         // Make a POST request to the API to create a new contact
-        .post(`${process.env.IMEALPREP_API_URL}`, requestData)
+        .post(`${process.env.IMEALPREP_API_URL}/contacts`, requestData)
         .then(response => {
           // Then push the new contact onto the Contact state contacts attribute, so it can be displayed in the contact list
           store.Contact.contacts.push(response.data);
