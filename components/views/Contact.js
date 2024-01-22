@@ -7,13 +7,7 @@ export default () => html`
       below.
     </p>
     <hr />
-    <form
-      id="fs-frm"
-      name="simple-contact-form"
-      accept-charset="utf-8"
-      action="${process.env.FORMSPREE_API_URL}"
-      method="post"
-    >
+    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8">
       <fieldset id="fs-frm-inputs">
         <label for="fullName">Full Name</label>
         <input
