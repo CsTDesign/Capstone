@@ -11,7 +11,7 @@ export default () => html`
       id="fs-frm"
       name="simple-contact-form"
       accept-charset="utf-8"
-      action=""
+      action="${process.env.FORMSPREE_API_URL}"
       method="post"
     >
       <fieldset id="fs-frm-inputs">
