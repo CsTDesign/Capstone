@@ -63,38 +63,38 @@ function afterRender(state) {
     });
   }
 
-  // if (state.view === "Contact") {
-  //   document.querySelector("#fs-frm").addEventListener("submit", event => {
-  //     event.preventDefault();
+  if (state.view === "Contact") {
+    document.querySelector("#fs-frm").addEventListener("submit", event => {
+      event.preventDefault();
 
-  //     // Get the form element
-  //     const emailInputList = event.target.elements;
-  //     console.log("Input Email Element List", emailInputList);
+      // Get the form element
+      const emailInputList = event.target.elements;
+      console.log("Input Email Element List", emailInputList);
 
-  //     // Create a request body object to send to Formspree
-  //     const requestData = {
-  //       fullName: emailInputList.fullName.value,
-  //       emailAddress: emailInputList.emailAddress.value,
-  //       message: emailInputList.message.value
-  //     };
+      // Create a request body object to send to Formspree
+      const requestData = {
+        fullName: emailInputList.fullName.value,
+        emailAddress: emailInputList.emailAddress.value,
+        message: emailInputList.message.value
+      };
 
-  //     // Log the request body to the console
-  //     console.log("request Body", requestData);
+      // Log the request body to the console
+      console.log("request Body", requestData);
 
-  //     axios
-  //       // Make a POST request to the API to create a new contact
-  //       .post(`${process.env.FORMSPREE_API_URL}`, requestData)
-  //       .then(response => {
-  //         // Then push the new contact onto the Contact state contacts attribute, so it can be displayed in the contact list
-  //         store.Contact.contacts.push(response.data);
-  //         router.navigate("/Contact");
-  //       })
-  //       // If there is an error log it to the console
-  //       .catch(error => {
-  //         console.log("It puked", error);
-  //       });
-  //   });
-  // }
+      axios
+        // Make a POST request to the API to create a new contact
+        .post(`${process.env.IMEALPREP_API_URL}`, requestData)
+        .then(response => {
+          // Then push the new contact onto the Contact state contacts attribute, so it can be displayed in the contact list
+          store.Contact.contacts.push(response.data);
+          router.navigate("/Contact");
+        })
+        // If there is an error log it to the console
+        .catch(error => {
+          console.log("It puked", error);
+        });
+    });
+  }
 }
 
 router.hooks({
